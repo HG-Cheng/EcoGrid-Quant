@@ -1,26 +1,30 @@
 # 🌍 EcoGrid-Quant: Microgrid Dispatch & Climate Risk Engine
 
-> **An energy-informatics backtesting engine for optimizing wind-solar economic dispatch and quantifying grid carbon emission risks.**
+> **An energy-informatics backtesting engine for optimizing wind-solar economic dispatch and quantifying ESG carbon risk.**
 
 ## 🎯 Project Vision
-EcoGrid-Quant is an object-oriented, Python-based mathematical optimization engine. It bridges the gap between **Physical Energy Systems** (weather data, generation bounds) and **Quantitative Financial Risk** (ESG carbon tax penalties). 
+EcoGrid-Quant is an object-oriented, Python-based mathematical optimization engine. It bridges the gap between **Physical Energy Systems** (weather data, generation bounds) and **Quantitative Financial Risk** (ESG carbon tax penalties & CAPEX/OPEX valuation). 
 
-It is designed to automatically compute the most cost-effective power dispatch strategy under strict environmental constraints.
+It is designed to compute the most cost-effective power dispatch strategy under strict environmental constraints and perform sensitivity analysis for infrastructure sizing.
 
-## 🚀 Core Features (V1.0)
-- **Real-World Data Ingestion**: Automated pipeline fetching hourly shortwave radiation and wind speed data from the Open-Meteo Satellite API (Target Location: Munich, Germany).
-- **NLP Optimization Engine**: Built with `scipy.optimize.minimize` (SLSQP solver) to execute non-linear programming for supply-demand balancing.
+## 🚀 Core Architecture & Features
+- **Data Ingestion Pipeline**: Automated fetching of hourly shortwave radiation and wind speed data from the Open-Meteo API (Munich, Germany).
+- **Inter-temporal Dynamic Dispatch (MPC)**: Built with `scipy.optimize.minimize` (SLSQP solver) to execute multi-period non-linear programming (NLP). It respects strict thermodynamic state-of-charge (SoC) transitions for Battery Energy Storage Systems (BESS).
 - **Dual-Layer Attribution**: Advanced backtesting visualizations separating physical asset dispatch (Wind/Solar/Coal) from financial risk (Carbon Penalties).
+- **Climate Risk vs. Asset Sizing (MACC)**: Deep grid-search sensitivity analysis computing the optimal capital expenditure (CAPEX) for BESS against varying carbon tax scenarios (OPEX).
 
-## 🗺️ Roadmap (Next Steps)
+## 🗺️ Roadmap Milestones
 - [x] **V1**: Static Single-Period Optimization (Economic Dispatch + Carbon Tax)
-- [ ] **V2**: Inter-temporal Dynamic Dispatch (Introducing Battery Energy Storage Systems - BESS)
-- [ ] **V3**: Sensitivity Analysis (Marginal Abatement Cost Curve for Wind/Solar capacity sizing)
+- [x] **V2**: Inter-temporal Dynamic Dispatch (Model Predictive Control for BESS Arbitrage)
+- [x] **V3**: Sensitivity Analysis & Asset Pricing (Marginal Abatement Cost Curve & CAPEX/OPEX Heatmaps)
 
-## 🛠️ Quick Start
-1. Ensure you have the required dependencies: `pandas`, `requests`, `scipy`, `matplotlib`, `tqdm`.
-2. Run the backtesting pipeline in `01_energy_data.ipynb`.
-3. The core algorithmic solver is located in `core/dispatch_engine.py`.
+## 🛠️ Quick Start & Reproducibility
+The project strictly follows zero-allocation and defensive programming principles.
+
+1. Install dependencies via `conda` or `pip`: `numpy`, `pandas`, `scipy`, `matplotlib`, `seaborn`, `tqdm`, `requests`.
+2. Core solver logic is encapsulated in `core/dispatch_engine.py`.
+3. Run `01_energy_data.ipynb` for real-world data ingestion and 72-hour MPC dynamic dispatch backtesting.
+4. Run `02_sensitivity_macc.ipynb` for multi-universe grid search on Carbon Tax vs. Battery Capacity.
 
 ---
-*Built for exploring the intersection of Energy Informatics, Systems Engineering, and Climate Tech.*
+*Built for exploring the intersection of Energy Informatics, Systems Engineering, and Quantitative Finance.*
