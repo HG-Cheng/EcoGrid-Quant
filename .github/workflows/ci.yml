@@ -30,7 +30,7 @@ jobs:
           pip install -e ".[dev]"
 
       - name: Ruff (lint + import order)
-        run: ruff check ecogrid
+        run: ruff check .
 
       - name: Mypy (static type check)
         run: mypy ecogrid

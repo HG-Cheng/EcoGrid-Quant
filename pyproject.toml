@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ecogrid-quant"
-version = "0.4.0"
+version = "0.8.0"
 description = "Industrial-grade micro-grid dispatch, unit-commitment MILP and climate-risk quant engine"
 readme = "README.md"
 requires-python = ">=3.10"

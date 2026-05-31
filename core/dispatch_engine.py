@@ -1,12 +1,13 @@
 import numpy as np
 from scipy.optimize import minimize
 
+
 class EcoGridOptimizer:
     """
-    EcoGrid 绿色电网调度优化引擎 
+    EcoGrid 绿色电网调度优化引擎
     使用 SciPy SLSQP (序列最小二乘规划) 求解器
     """
-    
+
     def __init__(self, carbon_tax_rate=50.0, bess_capacity=100.0):
         # --- V1 遗留参数：财务成本与碳排 ---
         self.carbon_tax_rate = carbon_tax_rate
@@ -23,7 +24,10 @@ class EcoGridOptimizer:
         self.eff_discharge = 0.95      # 放电效率
         self.initial_soc = 0.0         # 初始电量状态 (State of Charge, MWh)
 
-        print(f"⚙️ EcoGrid 优化引擎已初始化！碳税: {self.carbon_tax_rate} €/t | 电池容量: {self.bess_capacity} MWh")
+        print(
+            f"⚙️ EcoGrid 优化引擎已初始化！碳税: {self.carbon_tax_rate} €/t | "
+            f"电池容量: {self.bess_capacity} MWh"
+        )
 
     def check_engine_status(self):
         """打印引擎当前的核心参数配置，用于快速自检"""
@@ -51,11 +55,11 @@ class EcoGridOptimizer:
         def objective_cost(x):
             # 发电边际成本 (假设：风电2欧/MW，光伏1.5欧/MW，火电40欧/MW)
             generation_cost = x[0]*2.0 + x[1]*1.5 + x[2]*40.0
-            
+
             # 碳排放惩罚 (假设：火电每发1MW产生0.9吨碳排)
-            carbon_emission = x[2] * 0.9 
+            carbon_emission = x[2] * 0.9
             carbon_penalty = carbon_emission * self.carbon_tax_rate
-            
+
             return generation_cost + carbon_penalty
 
         # --- 2. 定义物理约束条件 (必须遵守的铁律) ---
@@ -71,8 +75,10 @@ class EcoGridOptimizer:
 
         # --- 5. 🚀 启动 SciPy 求解器！ ---
         # 使用 SLSQP 算法寻找最优解
-        result = minimize(objective_cost, x0, method='SLSQP', bounds=bounds, constraints=constraints)
-        
+        result = minimize(
+            objective_cost, x0, method='SLSQP', bounds=bounds, constraints=constraints
+        )
+
         return result
 
     def optimize_horizon(self, demand_series, wind_avail, solar_avail, horizon=24):
