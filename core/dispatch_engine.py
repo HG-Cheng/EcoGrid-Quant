@@ -7,20 +7,23 @@ class EcoGridOptimizer:
     使用 SciPy SLSQP (序列最小二乘规划) 求解器
     """
     
-    def __init__(self, carbon_tax_rate=50.0):
+    def __init__(self, carbon_tax_rate=50.0, bess_capacity=100.0):
         # --- V1 遗留参数：财务成本与碳排 ---
         self.carbon_tax_rate = carbon_tax_rate
         self.coal_cost = 30.0          # $/MWh 火电单位发电成本
         self.coal_emission = 0.8       # 吨 CO2/MWh 火电单位碳排强度
 
-        # --- NEW IN V2: BESS (巨型电池储能系统) 物理与热力学参数 ---
-        self.bess_capacity = 100.0     # MWh 电池最大储能容量（跨期套利的空间上限）
-        self.bess_max_power = 25.0     # MW 最大充/放电功率（决定套利的速度）
+        # --- V2 & V3 核心：BESS (巨型电池储能系统) 物理与热力学参数 ---
+        self.bess_capacity = bess_capacity  # MWh 电池最大储能容量 <--- 解除封印！由外部传入
+
+        # 为了更贴近现实，最大功率通常与容量有“充放电倍率 (C-rate)”的关系
+        # 假设我们使用的是 4 小时储能系统 (0.25C)，即最大功率 = 容量 / 4
+        self.bess_max_power = bess_capacity / 4.0  # MW 最大充/放电功率（决定套利的速度）
         self.eff_charge = 0.95         # 充电效率（跨期能量流转的热力学折损）
         self.eff_discharge = 0.95      # 放电效率
         self.initial_soc = 0.0         # 初始电量状态 (State of Charge, MWh)
 
-        print(f"⚙️ EcoGrid 优化引擎已初始化！当前碳税设定: {self.carbon_tax_rate} €/t")
+        print(f"⚙️ EcoGrid 优化引擎已初始化！碳税: {self.carbon_tax_rate} €/t | 电池容量: {self.bess_capacity} MWh")
 
     def check_engine_status(self):
         """打印引擎当前的核心参数配置，用于快速自检"""
