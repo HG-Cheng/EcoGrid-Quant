@@ -1,10 +1,9 @@
-"""EcoGrid-Quant: micro-grid dispatch and climate-risk engine.
+"""PV forecast uncertainty, battery control and finite grid imports.
 
-Public API surface for the industrial-grade engine. Import the configuration
-dataclasses and dispatch engines directly from the top-level package::
-
-    from ecogrid import GridConfig, MilpDispatchEngine
-
+The active research entry point is ``python -m ecogrid``. SystemConfig and
+solve_dispatch implement the new benchmark. The coal/wind engines and old
+rolling_backtest remain importable for archival compatibility, not as validated
+research baselines (see archive/notebooks/README.md).
 """
 
 from ecogrid.backtest import (
@@ -18,6 +17,7 @@ from ecogrid.config import (
     PlantConfig,
     ScenarioConfig,
 )
+from ecogrid.dispatch import SystemConfig, solve_dispatch
 from ecogrid.engines import (
     DispatchEngine,
     MilpDispatchEngine,
@@ -31,6 +31,8 @@ from ecogrid.scenarios import ScenarioSet, generate_scenarios
 __version__ = "0.8.0"
 
 __all__ = [
+    "SystemConfig",
+    "solve_dispatch",
     "FinanceConfig",
     "GridConfig",
     "PlantConfig",

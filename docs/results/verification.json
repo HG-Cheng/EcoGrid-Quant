@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "policy_runs": 66,
+  "executed_ledger_rows": 4080,
+  "independent_risk_rows_checked": 435,
+  "max_energy_residual_kwh": 1.7763568394002505e-15,
+  "max_balance_residual_kw": 1.0547118733938987e-15,
+  "max_accounting_residual_eur": 1.7763568394002505e-15,
+  "min_full_period_regret_eur": -1.4210854715202004e-14,
+  "source_and_checkpoint_hashes_verified": true,
+  "main_hours_per_policy": 672,
+  "main_days_per_policy": 28,
+  "commands": [
+    "python -B -X utf8 -m ecogrid --config configs/measured.json --source measured --output results/study"
+  ],
+  "run_exit_code": 0,
+  "study_wall_seconds": 704.113838,
+  "ruff": {
+    "command": "python -B -m ruff check .",
+    "exit_code": 0
+  },
+  "mypy": {
+    "command": "python -B -m mypy ecogrid",
+    "source_files": 23,
+    "exit_code": 0
+  },
+  "pure_cvar_tiebreak_hours_checked": 48,
+  "review_snapshot_tests": {
+    "command": "python -B -X utf8 -m pytest tests -p no:cacheprovider -o addopts= -q",
+    "exit_code": 0,
+    "passed": 74,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 6.42,
+    "import_from_snapshot_verified": true
+  }
+}

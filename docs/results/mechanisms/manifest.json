@@ -1,0 +1,564 @@
+{
+  "created_utc": "2026-09-24T12:58:40.548328+00:00",
+  "run_fingerprint": "7220fbf6efe3c22824433cdbdc84f293c867e03777835c11b96723876dd9a14a",
+  "completed_runs": {
+    "sampled_28d_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "6df6c9a24a7d3fe78bc6b2e54516ba19832adc9c7e147db7704ebd25b4e351ef",
+      "reused_original": true,
+      "wall_seconds": 0.015420899959281087,
+      "completed_utc": "2026-09-24T12:58:56.681768+00:00"
+    },
+    "sampled_28d_winter_g2p5_s42_deterministic": {
+      "ledger_sha256": "3fa9fdddd9376f8b6bc5662c611f696c612bb30d3557bb9dc1ec48def0ac4abb",
+      "reused_original": true,
+      "wall_seconds": 0.01328099996317178,
+      "completed_utc": "2026-09-24T12:58:56.700256+00:00"
+    },
+    "sampled_28d_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "39285fc41f56dc135cd4b88e3d58d5372379aaae1f36cbcaf3a8d7ffe9d6cfc2",
+      "reused_original": false,
+      "wall_seconds": 49.06599439994898,
+      "completed_utc": "2026-09-24T12:59:45.769419+00:00",
+      "forecast_sha256": "a7fa234d0617fb02273747a23507a98167e62b5b61bdc377831829f400c9c8ac"
+    },
+    "sampled_28d_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "0e5ed77603caefba47870ef141e03f7c827b79c529cf777e885454e7bd842231",
+      "reused_original": false,
+      "wall_seconds": 47.631268800003454,
+      "completed_utc": "2026-09-24T13:00:33.491062+00:00"
+    },
+    "sampled_28d_spring_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "673d99096a8ed56ddd4c7fef4b331ed81f9aedf267e73c6d28ba91f1d5214451",
+      "reused_original": true,
+      "wall_seconds": 0.011373800109140575,
+      "completed_utc": "2026-09-24T13:00:33.512155+00:00"
+    },
+    "sampled_28d_spring_g2p5_s42_deterministic": {
+      "ledger_sha256": "4410c52618a00db9f75eb81e6f39c62833e3992682d8ffe433570df90c79cb45",
+      "reused_original": true,
+      "wall_seconds": 0.012651100056245923,
+      "completed_utc": "2026-09-24T13:00:33.525886+00:00"
+    },
+    "sampled_28d_spring_g2p5_s42_stochastic": {
+      "ledger_sha256": "8ba10b6056b4d2a8e0d7b309d8edf915f2630f8f980caebd73e4dbbc3299ea22",
+      "reused_original": false,
+      "wall_seconds": 53.93352079996839,
+      "completed_utc": "2026-09-24T13:01:27.460645+00:00",
+      "forecast_sha256": "3f0233ebb8d59243536731c824c1c86c830688417497001dce603bdaa3264980"
+    },
+    "sampled_28d_spring_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "ba6a6bfadb27427bf793aeda137501189ab589bdae0c4e1651555c9f728d9342",
+      "reused_original": false,
+      "wall_seconds": 57.88902840006631,
+      "completed_utc": "2026-09-24T13:02:25.435170+00:00"
+    },
+    "sampled_28d_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "75620da70947bcb61a2aae3ac122e5e993bde6f4b59623540c46f8a9db37278a",
+      "reused_original": true,
+      "wall_seconds": 0.009715500054880977,
+      "completed_utc": "2026-09-24T13:02:25.445578+00:00"
+    },
+    "sampled_28d_summer_g2p5_s42_deterministic": {
+      "ledger_sha256": "0746b819d145955017aaff7e64b0f4fbe027ad9eff9a460cb0a4d950bbd7a4e3",
+      "reused_original": true,
+      "wall_seconds": 0.025336400023661554,
+      "completed_utc": "2026-09-24T13:02:25.470666+00:00"
+    },
+    "sampled_28d_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "23aca567952c601d34f824920d93e319468219ab093787e0de8c6c5708f450c0",
+      "reused_original": false,
+      "wall_seconds": 53.56562090001535,
+      "completed_utc": "2026-09-24T13:03:19.037699+00:00",
+      "forecast_sha256": "ebfe91beb813ed4824bcdfe32bf88b5c71892493db6eae2c61fc2fc8803d01d4"
+    },
+    "sampled_28d_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "1ba3192ea145607811991efe3337b60fd23adc0429d94c9b9ba5f9d462a5563c",
+      "reused_original": false,
+      "wall_seconds": 58.39822109998204,
+      "completed_utc": "2026-09-24T13:04:17.536079+00:00"
+    },
+    "sampled_28d_autumn_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "a2e5e9e47f866956ecfff97dbae3af24b35e6449e1bd6e33cfdef1cb38b87343",
+      "reused_original": true,
+      "wall_seconds": 0.011312299990095198,
+      "completed_utc": "2026-09-24T13:04:17.548152+00:00"
+    },
+    "sampled_28d_autumn_g2p5_s42_deterministic": {
+      "ledger_sha256": "d6257e908a14e105cf90407dc6151f5ea666d1be36eb4e648a216895f8b6cdfa",
+      "reused_original": true,
+      "wall_seconds": 0.010423799976706505,
+      "completed_utc": "2026-09-24T13:04:17.556973+00:00"
+    },
+    "sampled_28d_autumn_g2p5_s42_stochastic": {
+      "ledger_sha256": "9951699bdb2546387e1370cde4e479a0c2b4a2347c58157664246cff11794175",
+      "reused_original": false,
+      "wall_seconds": 46.02629379997961,
+      "completed_utc": "2026-09-24T13:05:03.583684+00:00",
+      "forecast_sha256": "282f464dd1d816cd4d0823f649e4e0254ea619ad6f28b0c83eb49302dbf6d79c"
+    },
+    "sampled_28d_autumn_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "0689ef70b8d06be90c636e5a6eb95d318de0433a0e2354f6b98f63412b67dda6",
+      "reused_original": false,
+      "wall_seconds": 48.46372470003553,
+      "completed_utc": "2026-09-24T13:05:52.146463+00:00"
+    },
+    "all_matching_28d_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "057f07334ca24a2c25759db1aa5fcccc7f9a6faeb12a42dda68168892bd58f8a",
+      "reused_original": true,
+      "wall_seconds": 0.012927300063893199,
+      "completed_utc": "2026-09-24T13:05:52.158297+00:00"
+    },
+    "all_matching_28d_winter_g2p5_s42_deterministic": {
+      "ledger_sha256": "6465855a645170325d7504081da99eff9af129804cc0e84fcacd86eb74661778",
+      "reused_original": true,
+      "wall_seconds": 0.012991299969144166,
+      "completed_utc": "2026-09-24T13:05:52.170821+00:00"
+    },
+    "all_matching_28d_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "c95ddc927b25d3eb4e385cb4a948f52f3d9421a0e2b058dcab99440f6a0b60b9",
+      "reused_original": false,
+      "wall_seconds": 138.64221710001584,
+      "completed_utc": "2026-09-24T13:08:10.815647+00:00",
+      "forecast_sha256": "6ddedb366ea114d083a5244c9923baf60eecb840945ddeb4a2c86e21c9a868fd"
+    },
+    "all_matching_28d_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "a97ccf9e5a873a621304b742e61ab1f5eca36b458f3cb81c0fe37060b983d29a",
+      "reused_original": false,
+      "wall_seconds": 150.10421139991377,
+      "completed_utc": "2026-09-24T13:10:41.015249+00:00"
+    },
+    "all_matching_28d_spring_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "ae889e8104e24958bdd02f72cef54fde3f4d55be8c82a9914469854be0289d09",
+      "reused_original": true,
+      "wall_seconds": 0.011108799953944981,
+      "completed_utc": "2026-09-24T13:10:41.027854+00:00"
+    },
+    "all_matching_28d_spring_g2p5_s42_deterministic": {
+      "ledger_sha256": "94040fc39d70173c4f4e3e4b3c21ab835f6d5965e7305f1cf1be2f4849d463be",
+      "reused_original": true,
+      "wall_seconds": 0.01679859997238964,
+      "completed_utc": "2026-09-24T13:10:41.045334+00:00"
+    },
+    "all_matching_28d_spring_g2p5_s42_stochastic": {
+      "ledger_sha256": "73b53f49dd1029def98bf4ab0e6dd2f5e2d16234f9488243515750f3b8e00f6a",
+      "reused_original": false,
+      "wall_seconds": 198.57742520002648,
+      "completed_utc": "2026-09-24T13:13:59.623452+00:00",
+      "forecast_sha256": "79b466dc67123f3f98597bb5ab02040a696eb2265df4cf730393d2faebf11fba"
+    },
+    "all_matching_28d_spring_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "ee79075ca0c2b0eac501fb302d18f6f1b36ef1fa1bbd47bc273ed245e098ada9",
+      "reused_original": false,
+      "wall_seconds": 204.661533699953,
+      "completed_utc": "2026-09-24T13:17:24.380944+00:00"
+    },
+    "all_matching_28d_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "10c98c1483852db7e7d7d9a83fe7f4c9b11941df3a792e56a7be10080b7c2adf",
+      "reused_original": true,
+      "wall_seconds": 0.014621999929659069,
+      "completed_utc": "2026-09-24T13:17:24.399982+00:00"
+    },
+    "all_matching_28d_summer_g2p5_s42_deterministic": {
+      "ledger_sha256": "aafba717dc2f082bd56a9baa5b67197d96cddfb48df59b5534f0a48801739081",
+      "reused_original": true,
+      "wall_seconds": 0.016978499945253134,
+      "completed_utc": "2026-09-24T13:17:24.417581+00:00"
+    },
+    "all_matching_28d_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "2c587bd7498a04828c62f3b68a3d59eca9c39e498f7851de3d2f8feddbb05cb9",
+      "reused_original": false,
+      "wall_seconds": 182.61138719995506,
+      "completed_utc": "2026-09-24T13:20:27.027054+00:00",
+      "forecast_sha256": "9a606115a24d046767a4b00df7b910d5d493e5317bf98b47dcacae081fe279d7"
+    },
+    "all_matching_28d_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "761391b1be8878f93f8a9f9646a33b7e5909ac04ab0d6a623a0b371953d8f082",
+      "reused_original": false,
+      "wall_seconds": 187.84119780000765,
+      "completed_utc": "2026-09-24T13:23:34.942524+00:00"
+    },
+    "all_matching_28d_autumn_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "76779470d5bf9ebf54eff73f5f2147b3791082c1e3d0b8fc6c34a7d756532c88",
+      "reused_original": true,
+      "wall_seconds": 0.011316100019030273,
+      "completed_utc": "2026-09-24T13:23:34.946676+00:00"
+    },
+    "all_matching_28d_autumn_g2p5_s42_deterministic": {
+      "ledger_sha256": "bffaa0de51e456bbd01110f011ba9951999add6ac51b0d106f45e466c1141414",
+      "reused_original": true,
+      "wall_seconds": 0.013672999921254814,
+      "completed_utc": "2026-09-24T13:23:34.972247+00:00"
+    },
+    "all_matching_28d_autumn_g2p5_s42_stochastic": {
+      "ledger_sha256": "0545a999536daa097d87c10f5585fb01cdfd7f6a09eb444713ed076d427828eb",
+      "reused_original": false,
+      "wall_seconds": 130.27220490004402,
+      "completed_utc": "2026-09-24T13:25:45.245140+00:00",
+      "forecast_sha256": "c1fd9664210cac8526fa1effbfa6afeb2db398615f80d7219f716bc8586c5874"
+    },
+    "all_matching_28d_autumn_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "d0b81fed346dcb8665ffbdf3b3fea4d592a8f11dd29a9ec7c85a84b458b28102",
+      "reused_original": false,
+      "wall_seconds": 146.08461040002294,
+      "completed_utc": "2026-09-24T13:28:11.428538+00:00"
+    },
+    "planned_48h_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "98fc1b506c74ce6453fb434c50694d66cf09b12a290ea990bcd847c828e29ee4",
+      "reused_original": false,
+      "wall_seconds": 0.05909689993131906,
+      "completed_utc": "2026-09-24T13:28:11.488631+00:00"
+    },
+    "planned_48h_winter_g2p5_s42_deterministic": {
+      "ledger_sha256": "e7ba5976ac596b868323216dd4d72fec2aae3a1ce91e6a8ef3e5e061d141cfde",
+      "reused_original": true,
+      "wall_seconds": 0.00781540002208203,
+      "completed_utc": "2026-09-24T13:28:11.494845+00:00"
+    },
+    "planned_48h_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "fc5fdc0ca0e1845bc10fe593b0ff582f6624654742c300d0ad145d94e1629e6b",
+      "reused_original": true,
+      "wall_seconds": 0.034498600056394935,
+      "completed_utc": "2026-09-24T13:28:11.531922+00:00",
+      "forecast_sha256": "3c0204294a83d4931214c1909cfb17c4a78b7f41c06b84152e95fff7d4cc66c3"
+    },
+    "planned_48h_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "c987959040ae5a63840fa3d7b43088eb53a5cf08dcd8a662f5973f18804f69b3",
+      "reused_original": true,
+      "wall_seconds": 0.007735799998044968,
+      "completed_utc": "2026-09-24T13:28:11.561320+00:00"
+    },
+    "planned_48h_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "9b82fa272cef376855cb3cedb6555b138abb23cfe5e0eea06b2484a7cf88c52a",
+      "reused_original": false,
+      "wall_seconds": 0.10078169999178499,
+      "completed_utc": "2026-09-24T13:28:11.661170+00:00"
+    },
+    "planned_48h_summer_g2p5_s42_deterministic": {
+      "ledger_sha256": "cf84d2405ea71a55012e17c2c50b923b2f8bf92e57c4546d10b5c6d3b8d95ed8",
+      "reused_original": true,
+      "wall_seconds": 0.008852300001308322,
+      "completed_utc": "2026-09-24T13:28:11.669129+00:00"
+    },
+    "planned_48h_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "dfecafb852f3a05bed37698fd7323053b5dd5bdc7a60400929c1a133c7172b70",
+      "reused_original": true,
+      "wall_seconds": 0.031366299954243004,
+      "completed_utc": "2026-09-24T13:28:11.704395+00:00",
+      "forecast_sha256": "6eebf92afca6553a7770fe74701cd0e381e2d548712bf3760c74577c8733bf71"
+    },
+    "planned_48h_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "5273d73b5489ca392b58dbdfffd63f6390ffeef63ea26ef07b1529bd9488dd8c",
+      "reused_original": true,
+      "wall_seconds": 0.009542900021187961,
+      "completed_utc": "2026-09-24T13:28:11.735784+00:00"
+    },
+    "deficit_discharge_48h_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "271cef1ff8d9cc89027144607ed9e6062bc91371ae97d81d308617c9d05a7dea",
+      "reused_original": false,
+      "wall_seconds": 0.0552253999048844,
+      "completed_utc": "2026-09-24T13:28:11.790892+00:00"
+    },
+    "deficit_discharge_48h_winter_g2p5_s42_deterministic": {
+      "ledger_sha256": "45697b90720cdfee5131f6d2c9fa30234fc7c2b6a8f5fb2b137d8e139c519c52",
+      "reused_original": false,
+      "wall_seconds": 2.2106020000064746,
+      "completed_utc": "2026-09-24T13:28:14.002646+00:00"
+    },
+    "deficit_discharge_48h_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "0f398ee4bd67645845c3685eb863a3e28964a14566a16c08fbd183e0802a5537",
+      "reused_original": false,
+      "wall_seconds": 14.316101099946536,
+      "completed_utc": "2026-09-24T13:28:28.319111+00:00",
+      "forecast_sha256": "ba05f0d030d7ee06d18468d83ad26f2c24c5acef079235f6379750b0c6f5e1e1"
+    },
+    "deficit_discharge_48h_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "d433208c5465cadb375f87f816e686d9117162c6bc3ea2ed6ac240c351c4cd1d",
+      "reused_original": false,
+      "wall_seconds": 14.985755100031383,
+      "completed_utc": "2026-09-24T13:28:43.336339+00:00"
+    },
+    "deficit_discharge_48h_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "98a7c502717317894803311c9d90bcc7959317e6feac89faa37ffad00ec6fc73",
+      "reused_original": false,
+      "wall_seconds": 0.06535889999940991,
+      "completed_utc": "2026-09-24T13:28:43.406352+00:00"
+    },
+    "deficit_discharge_48h_summer_g2p5_s42_deterministic": {
+      "ledger_sha256": "2c2d120f68b43dcc215f9ab4222715857a326b49337620e9f81c608d0dfa51dc",
+      "reused_original": false,
+      "wall_seconds": 2.1685493999393657,
+      "completed_utc": "2026-09-24T13:28:45.575787+00:00"
+    },
+    "deficit_discharge_48h_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "02c5e80c1ca2bfe8ecac68e51acff872eb01ad1b1f4287088ef2d22564881048",
+      "reused_original": false,
+      "wall_seconds": 14.381098999991082,
+      "completed_utc": "2026-09-24T13:28:59.953089+00:00",
+      "forecast_sha256": "0d94b87579952a4062e49f5b737a820898871168a65d42ba08835c792ee55a66"
+    },
+    "deficit_discharge_48h_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "402163a947010c01fa7603a922b13e7cbc26cbefd6f3fdaa6e9572179263bd8c",
+      "reused_original": false,
+      "wall_seconds": 17.229962899931706,
+      "completed_utc": "2026-09-24T13:29:17.222161+00:00"
+    }
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyomo": "6.10.0",
+    "highspy": "1.14.0",
+    "scipy": "1.15.3"
+  },
+  "protocol": {
+    "interpretation": "Sensitivity chosen after viewing the original 28 days; not independent validation",
+    "settings": {
+      "analysis": "posthoc_mechanisms",
+      "base_config": "configs/measured.json",
+      "baseline_results": "results/study",
+      "scenario_modes": [
+        "sampled",
+        "all_matching"
+      ],
+      "control_windows": [
+        "winter",
+        "summer"
+      ],
+      "control_hours": 48,
+      "execution_rules": [
+        "planned",
+        "deficit_discharge"
+      ],
+      "interpretation": "Sensitivity chosen after viewing the original 28 days; not independent validation"
+    },
+    "base_settings": {
+      "study": "opsd_raw_meter_seasons_2017",
+      "data": {
+        "source_version": "2020-04-15",
+        "column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "cache_dir": "data/raw/opsd"
+      },
+      "train_days": 60,
+      "calibration_days": 30,
+      "evaluation_days": 7,
+      "windows": [
+        {
+          "name": "winter",
+          "start": "2017-01-01T00:00:00Z"
+        },
+        {
+          "name": "spring",
+          "start": "2017-04-01T00:00:00Z"
+        },
+        {
+          "name": "summer",
+          "start": "2017-07-01T00:00:00Z"
+        },
+        {
+          "name": "autumn",
+          "start": "2017-10-01T00:00:00Z"
+        }
+      ],
+      "seed": 42,
+      "n_scenarios": 12,
+      "alpha": 0.9,
+      "risk_weight": 0.5,
+      "representative_windows": [
+        "winter",
+        "summer"
+      ],
+      "sensitivity_hours": 24,
+      "additional_seeds": [
+        7,
+        99
+      ],
+      "grid_limits_kw": [
+        2.0,
+        3.0
+      ],
+      "stress_hours": 48,
+      "stress": {
+        "pv_multiplier": 0.2,
+        "positive_forecast_bias_kw": 0.75
+      },
+      "system": {
+        "battery_kwh": 8.0,
+        "battery_kw": 3.0,
+        "grid_kw": 2.5,
+        "initial_soc_kwh": 4.0,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "throughput_eur_per_kwh": 0.01,
+        "lost_load_eur_per_kwh": 10.0,
+        "terminal_eur_per_kwh": 0.18,
+        "solver_time_limit": 30.0,
+        "feasibility_tolerance": 1e-06
+      }
+    },
+    "groups": [
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "sampled_28d",
+        "window": "winter",
+        "hours": 168,
+        "scenario_mode": "sampled",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "sampled_28d",
+        "window": "spring",
+        "hours": 168,
+        "scenario_mode": "sampled",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "sampled_28d",
+        "window": "summer",
+        "hours": 168,
+        "scenario_mode": "sampled",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "sampled_28d",
+        "window": "autumn",
+        "hours": 168,
+        "scenario_mode": "sampled",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "all_matching_28d",
+        "window": "winter",
+        "hours": 168,
+        "scenario_mode": "all_matching",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "all_matching_28d",
+        "window": "spring",
+        "hours": 168,
+        "scenario_mode": "all_matching",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "all_matching_28d",
+        "window": "summer",
+        "hours": 168,
+        "scenario_mode": "all_matching",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "all_matching_28d",
+        "window": "autumn",
+        "hours": 168,
+        "scenario_mode": "all_matching",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "planned_48h",
+        "window": "winter",
+        "hours": 48,
+        "scenario_mode": "sampled",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "planned_48h",
+        "window": "summer",
+        "hours": 48,
+        "scenario_mode": "sampled",
+        "execution_rule": "planned"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "deficit_discharge_48h",
+        "window": "winter",
+        "hours": 48,
+        "scenario_mode": "sampled",
+        "execution_rule": "deficit_discharge"
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "experiment": "deficit_discharge_48h",
+        "window": "summer",
+        "hours": 48,
+        "scenario_mode": "sampled",
+        "execution_rule": "deficit_discharge"
+      }
+    ],
+    "original_manifest_sha256": "380b3c3026302259e10ba18b493e2b6b99ef260d108ad7a92f05ccf131bd223d",
+    "run_code_sha256": {
+      "ecogrid\\__init__.py": "6fe3841a0ddd03abb94b2fca9862bae66fd3a261a69044c21d0d4d8704317e9d",
+      "ecogrid\\__main__.py": "ce4acf77e3333361b0f23902f8421b230db0f84c2020ef2d8dedf913ae53a87b",
+      "ecogrid\\backtest.py": "c10d3db1cbc463cdb3f9fbd1fb7ef6f28c3cd3d0c9f3f07c5cd99e737e6042ca",
+      "ecogrid\\cli.py": "7a2dd46b444ba83053d17811302e218e9ef8913ed3636f669c898efd307266eb",
+      "ecogrid\\config.py": "d48176156a04142b7a6c544b3f8d2ca8a40ec2a4eba19f5ab814a4e5b52aafe2",
+      "ecogrid\\data\\__init__.py": "2a5ec919500457db52b57fc4a35e4a79bfe38de73105e56809ba6323a2ea7a42",
+      "ecogrid\\data\\benchmark.py": "f105d316733bad268dcad3d4d43000cde3de3e9fd13badefa83080e848fc43ef",
+      "ecogrid\\data\\ingestion.py": "4d2e6954c46a13de4922a07e7c5ede17b4cc0e6cea074f3eadedcb750f310352",
+      "ecogrid\\data\\measured.py": "eb43f3f6d4becf068fd04520ddbfc0b5b9ebe177f3055ab36ef9d15125f1057c",
+      "ecogrid\\dispatch.py": "4c1a2c8ec8d9ec42b15769d32733460bb29d73c1d7424f69327465aacfcd4f3e",
+      "ecogrid\\engines\\__init__.py": "281de65fd54b5962ad2b590d24d3b4b839b6196593d4ab61f10277499cee1fe2",
+      "ecogrid\\engines\\base.py": "e6e5bacb6ecd062e09c389e6b3138e10d08bfc19bbfe071105b0a0c40a27a06f",
+      "ecogrid\\engines\\milp_engine.py": "8977b4715ad766db70ab9723137f9a02d900db9e3e5f152421e9a09a860273db",
+      "ecogrid\\engines\\slsqp_engine.py": "194cb49a302e3d8d769f39d98b2bc3da506b18421d878016cf0803737e1ed9a1",
+      "ecogrid\\engines\\stochastic.py": "5cbec942af9f2acb268c8f4c35e690413c03ca4f9c1ed206e868a379d94c0825",
+      "ecogrid\\evaluation.py": "fce0bfb4f29af1ed1cf6427d78164dfd6d915d7ce60cd4dbae1f85f9f65976cb",
+      "ecogrid\\finance.py": "f5c93eef7a8a33c03874bf9e525be2ee935deb1d3c043a68a4811204b704f446",
+      "ecogrid\\forecast.py": "4307abe5651873297551533faa7ba299156305cf4236171875c1b069948aff29",
+      "ecogrid\\results.py": "5ce305b196de62bc34d486640c5d46ff1560f0c749277cd4e4da0fbc80ccc27c",
+      "ecogrid\\scenarios.py": "50abc29d90f9d56bcb1717f505c62624d5f8cd31d22a4986c287e04251d09b51",
+      "ecogrid\\simulation.py": "f81193997974aa77125740c57a797911aea95aa5cb11e33b6757dcf4ed6c0942",
+      "ecogrid\\study.py": "ebf5a3239faeb9f67141d89d554da16332c0efeaaef979413096ae0b954943cf"
+    }
+  },
+  "status": "complete",
+  "code_sha256": {
+    "ecogrid\\__init__.py": "6fe3841a0ddd03abb94b2fca9862bae66fd3a261a69044c21d0d4d8704317e9d",
+    "ecogrid\\__main__.py": "ce4acf77e3333361b0f23902f8421b230db0f84c2020ef2d8dedf913ae53a87b",
+    "ecogrid\\backtest.py": "c10d3db1cbc463cdb3f9fbd1fb7ef6f28c3cd3d0c9f3f07c5cd99e737e6042ca",
+    "ecogrid\\cli.py": "7a2dd46b444ba83053d17811302e218e9ef8913ed3636f669c898efd307266eb",
+    "ecogrid\\config.py": "d48176156a04142b7a6c544b3f8d2ca8a40ec2a4eba19f5ab814a4e5b52aafe2",
+    "ecogrid\\data\\__init__.py": "2a5ec919500457db52b57fc4a35e4a79bfe38de73105e56809ba6323a2ea7a42",
+    "ecogrid\\data\\benchmark.py": "f105d316733bad268dcad3d4d43000cde3de3e9fd13badefa83080e848fc43ef",
+    "ecogrid\\data\\ingestion.py": "4d2e6954c46a13de4922a07e7c5ede17b4cc0e6cea074f3eadedcb750f310352",
+    "ecogrid\\data\\measured.py": "eb43f3f6d4becf068fd04520ddbfc0b5b9ebe177f3055ab36ef9d15125f1057c",
+    "ecogrid\\diagnostics.py": "316a6c9293e2f3132903da64f8c0ff9fe847fd713f08bc1bd7edf323d8ce8a41",
+    "ecogrid\\dispatch.py": "4c1a2c8ec8d9ec42b15769d32733460bb29d73c1d7424f69327465aacfcd4f3e",
+    "ecogrid\\engines\\__init__.py": "281de65fd54b5962ad2b590d24d3b4b839b6196593d4ab61f10277499cee1fe2",
+    "ecogrid\\engines\\base.py": "e6e5bacb6ecd062e09c389e6b3138e10d08bfc19bbfe071105b0a0c40a27a06f",
+    "ecogrid\\engines\\milp_engine.py": "8977b4715ad766db70ab9723137f9a02d900db9e3e5f152421e9a09a860273db",
+    "ecogrid\\engines\\slsqp_engine.py": "194cb49a302e3d8d769f39d98b2bc3da506b18421d878016cf0803737e1ed9a1",
+    "ecogrid\\engines\\stochastic.py": "5cbec942af9f2acb268c8f4c35e690413c03ca4f9c1ed206e868a379d94c0825",
+    "ecogrid\\evaluation.py": "fce0bfb4f29af1ed1cf6427d78164dfd6d915d7ce60cd4dbae1f85f9f65976cb",
+    "ecogrid\\finance.py": "f5c93eef7a8a33c03874bf9e525be2ee935deb1d3c043a68a4811204b704f446",
+    "ecogrid\\forecast.py": "4307abe5651873297551533faa7ba299156305cf4236171875c1b069948aff29",
+    "ecogrid\\results.py": "5ce305b196de62bc34d486640c5d46ff1560f0c749277cd4e4da0fbc80ccc27c",
+    "ecogrid\\scenarios.py": "50abc29d90f9d56bcb1717f505c62624d5f8cd31d22a4986c287e04251d09b51",
+    "ecogrid\\simulation.py": "f81193997974aa77125740c57a797911aea95aa5cb11e33b6757dcf4ed6c0942",
+    "ecogrid\\study.py": "ebf5a3239faeb9f67141d89d554da16332c0efeaaef979413096ae0b954943cf"
+  },
+  "completed_utc": "2026-09-24T13:29:19.652291+00:00",
+  "invocation_wall_seconds": 1839.2221736999927
+}

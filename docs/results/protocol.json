@@ -1,0 +1,391 @@
+{
+  "settings": {
+    "study": "opsd_raw_meter_seasons_2017",
+    "data": {
+      "source_version": "2020-04-15",
+      "column": "DE_KN_residential6_pv",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "cache_dir": "data/raw/opsd"
+    },
+    "train_days": 60,
+    "calibration_days": 30,
+    "evaluation_days": 7,
+    "windows": [
+      {
+        "name": "winter",
+        "start": "2017-01-01T00:00:00Z"
+      },
+      {
+        "name": "spring",
+        "start": "2017-04-01T00:00:00Z"
+      },
+      {
+        "name": "summer",
+        "start": "2017-07-01T00:00:00Z"
+      },
+      {
+        "name": "autumn",
+        "start": "2017-10-01T00:00:00Z"
+      }
+    ],
+    "seed": 42,
+    "n_scenarios": 12,
+    "alpha": 0.9,
+    "risk_weight": 0.5,
+    "representative_windows": [
+      "winter",
+      "summer"
+    ],
+    "sensitivity_hours": 24,
+    "additional_seeds": [
+      7,
+      99
+    ],
+    "grid_limits_kw": [
+      2.0,
+      3.0
+    ],
+    "stress_hours": 48,
+    "stress": {
+      "pv_multiplier": 0.2,
+      "positive_forecast_bias_kw": 0.75
+    },
+    "system": {
+      "battery_kwh": 8.0,
+      "battery_kw": 3.0,
+      "grid_kw": 2.5,
+      "initial_soc_kwh": 4.0,
+      "charge_efficiency": 0.95,
+      "discharge_efficiency": 0.95,
+      "throughput_eur_per_kwh": 0.01,
+      "lost_load_eur_per_kwh": 10.0,
+      "terminal_eur_per_kwh": 0.18,
+      "solver_time_limit": 30.0,
+      "feasibility_tolerance": 1e-06
+    }
+  },
+  "windows": [
+    {
+      "name": "winter",
+      "train_start": "2016-10-03T00:00:00+00:00",
+      "calibration_start": "2016-12-02T00:00:00+00:00",
+      "test_start": "2017-01-01T00:00:00+00:00",
+      "test_end": "2017-01-08T00:00:00+00:00",
+      "frame_end": "2017-01-09T00:00:00+00:00",
+      "differentiation_predecessor": "2016-10-03T00:00:00+00:00",
+      "training_hours": 1440,
+      "calibration_hours": 720,
+      "evaluation_hours": 168,
+      "lookahead_hours": 24,
+      "total_hours": 2352,
+      "relevant_interpolation_count": 0,
+      "invalid_interval_count": 0,
+      "selection_basis": "calendar_and_source_quality_before_strategy_results",
+      "pv_source_column": "DE_KN_residential6_pv",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "maximum_endpoint_age_seconds": 103.0,
+      "minimum_actual_interval_seconds": 3535.0,
+      "maximum_actual_interval_seconds": 3661.0,
+      "publisher_preprocessing_applied": false,
+      "interpolation_applied": false
+    },
+    {
+      "name": "spring",
+      "train_start": "2017-01-01T00:00:00+00:00",
+      "calibration_start": "2017-03-02T00:00:00+00:00",
+      "test_start": "2017-04-01T00:00:00+00:00",
+      "test_end": "2017-04-08T00:00:00+00:00",
+      "frame_end": "2017-04-09T00:00:00+00:00",
+      "differentiation_predecessor": "2017-01-01T00:00:00+00:00",
+      "training_hours": 1440,
+      "calibration_hours": 720,
+      "evaluation_hours": 168,
+      "lookahead_hours": 24,
+      "total_hours": 2352,
+      "relevant_interpolation_count": 0,
+      "invalid_interval_count": 0,
+      "selection_basis": "calendar_and_source_quality_before_strategy_results",
+      "pv_source_column": "DE_KN_residential6_pv",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "maximum_endpoint_age_seconds": 78.0,
+      "minimum_actual_interval_seconds": 3535.0,
+      "maximum_actual_interval_seconds": 3661.0,
+      "publisher_preprocessing_applied": false,
+      "interpolation_applied": false
+    },
+    {
+      "name": "summer",
+      "train_start": "2017-04-02T00:00:00+00:00",
+      "calibration_start": "2017-06-01T00:00:00+00:00",
+      "test_start": "2017-07-01T00:00:00+00:00",
+      "test_end": "2017-07-08T00:00:00+00:00",
+      "frame_end": "2017-07-09T00:00:00+00:00",
+      "differentiation_predecessor": "2017-04-02T00:00:00+00:00",
+      "training_hours": 1440,
+      "calibration_hours": 720,
+      "evaluation_hours": 168,
+      "lookahead_hours": 24,
+      "total_hours": 2352,
+      "relevant_interpolation_count": 0,
+      "invalid_interval_count": 0,
+      "selection_basis": "calendar_and_source_quality_before_strategy_results",
+      "pv_source_column": "DE_KN_residential6_pv",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "maximum_endpoint_age_seconds": 160.0,
+      "minimum_actual_interval_seconds": 3490.0,
+      "maximum_actual_interval_seconds": 3665.0,
+      "publisher_preprocessing_applied": false,
+      "interpolation_applied": false
+    },
+    {
+      "name": "autumn",
+      "train_start": "2017-07-03T00:00:00+00:00",
+      "calibration_start": "2017-09-01T00:00:00+00:00",
+      "test_start": "2017-10-01T00:00:00+00:00",
+      "test_end": "2017-10-08T00:00:00+00:00",
+      "frame_end": "2017-10-09T00:00:00+00:00",
+      "differentiation_predecessor": "2017-07-03T00:00:00+00:00",
+      "training_hours": 1440,
+      "calibration_hours": 720,
+      "evaluation_hours": 168,
+      "lookahead_hours": 24,
+      "total_hours": 2352,
+      "relevant_interpolation_count": 0,
+      "invalid_interval_count": 0,
+      "selection_basis": "calendar_and_source_quality_before_strategy_results",
+      "pv_source_column": "DE_KN_residential6_pv",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "maximum_endpoint_age_seconds": 104.0,
+      "minimum_actual_interval_seconds": 3534.0,
+      "maximum_actual_interval_seconds": 3663.0,
+      "publisher_preprocessing_applied": false,
+      "interpolation_applied": false
+    }
+  ],
+  "source": {
+    "original_meter_readings": true,
+    "source": "opsd_original_cossmic_meter",
+    "source_url": "https://data.open-power-system-data.org/household_data/2020-04-15/original_data/original_data.zip",
+    "source_version": "2020-04-15",
+    "source_member": "original_data/DE_KN_residential_006/phptimeseries/feed_43.MYD",
+    "source_unit": "cumulative kWh",
+    "source_encoding": "9-byte <xIf records: padding, uint32 Unix UTC seconds, float32 cumulative kWh",
+    "raw_cache_path": "D:\\Avery_Data\\Desktop\\Python_Workspace\\EcoGrid-Quant\\data\\raw\\opsd\\residential6_pv_feed_43_current.MYD",
+    "raw_sha256": {
+      "residential6_pv_feed_43_current.MYD": "e4607b7971c98026cabaea253f181e3b9b90efbcbe91cb784c41653d0b87e73c"
+    },
+    "raw_member_crc32": 3286998230,
+    "source_decoder_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/read.py#L144-L171",
+    "source_feed_mapping_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/conf/households.yml",
+    "license": "CC-BY-4.0",
+    "attribution": "Open Power System Data. 2020. Data Package Household Data. Version 2020-04-15."
+  },
+  "derived_data": {
+    "original_meter_readings": true,
+    "source": "opsd_original_cossmic_meter",
+    "source_url": "https://data.open-power-system-data.org/household_data/2020-04-15/original_data/original_data.zip",
+    "source_version": "2020-04-15",
+    "source_member": "original_data/DE_KN_residential_006/phptimeseries/feed_43.MYD",
+    "source_unit": "cumulative kWh",
+    "source_encoding": "9-byte <xIf records: padding, uint32 Unix UTC seconds, float32 cumulative kWh",
+    "raw_cache_path": "D:\\Avery_Data\\Desktop\\Python_Workspace\\EcoGrid-Quant\\data\\raw\\opsd\\residential6_pv_feed_43_current.MYD",
+    "raw_sha256": {
+      "residential6_pv_feed_43_current.MYD": "e4607b7971c98026cabaea253f181e3b9b90efbcbe91cb784c41653d0b87e73c"
+    },
+    "raw_member_crc32": 3286998230,
+    "source_decoder_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/read.py#L144-L171",
+    "source_feed_mapping_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/conf/households.yml",
+    "license": "CC-BY-4.0",
+    "attribution": "Open Power System Data. 2020. Data Package Household Data. Version 2020-04-15.",
+    "pv_source_column": "DE_KN_residential6_pv",
+    "pv_observation_type": "measured_original_cumulative_meter",
+    "load_price_type": "deterministic_benchmark_assumptions",
+    "pv_scale": 0.5,
+    "pv_capacity_kw": 5.0,
+    "capacity_basis": "declared_simulation_bound_not_verified_site_nameplate",
+    "scaling_basis": "fixed_declared_scale_not_normalized_by_test_data",
+    "pv_conversion": "(last_actual_kwh_at_or_before_t+1h - last_actual_kwh_at_or_before_t) / 1h * pv_scale",
+    "index_semantics": "nominal UTC hour-start bins [t,t+1h)",
+    "meter_interval_semantics": "actual cumulative endpoints <= nominal boundaries, each <=180s old",
+    "observation_delay_hours": 2,
+    "observation_availability_basis": "simulated conservative release, not historical telemetry",
+    "as_issued_measurements": false,
+    "publisher_preprocessing_is_causal": null,
+    "quality_policy": "reject missing/stale endpoints and nonphysical interval deltas; no filling",
+    "quality_caveat": "Original meter energy assigned to hourly bins with <=180s endpoint lag; actual timestamps and elapsed seconds retained. No interpolation or publisher validation is applied. Two-hour release is a simulation assumption because historical transmission arrival times are not available.",
+    "regularization_source_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/imputation.py#L32-L66",
+    "retrospective_filter_source_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/validation.py#L58-L110",
+    "maximum_endpoint_age_seconds": 180,
+    "publisher_preprocessing_applied": false,
+    "interpolation_applied": false,
+    "whole_series_statistics_applied": false,
+    "selection": {
+      "name": "winter",
+      "train_start": "2016-10-03T00:00:00+00:00",
+      "calibration_start": "2016-12-02T00:00:00+00:00",
+      "test_start": "2017-01-01T00:00:00+00:00",
+      "test_end": "2017-01-08T00:00:00+00:00",
+      "frame_end": "2017-01-09T00:00:00+00:00",
+      "differentiation_predecessor": "2016-10-03T00:00:00+00:00",
+      "training_hours": 1440,
+      "calibration_hours": 720,
+      "evaluation_hours": 168,
+      "lookahead_hours": 24,
+      "total_hours": 2352,
+      "relevant_interpolation_count": 0,
+      "invalid_interval_count": 0,
+      "selection_basis": "calendar_and_source_quality_before_strategy_results",
+      "pv_source_column": "DE_KN_residential6_pv",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "maximum_endpoint_age_seconds": 103.0,
+      "minimum_actual_interval_seconds": 3535.0,
+      "maximum_actual_interval_seconds": 3661.0,
+      "publisher_preprocessing_applied": false,
+      "interpolation_applied": false
+    }
+  },
+  "run_code_sha256": {
+    "ecogrid\\__init__.py": "6fe3841a0ddd03abb94b2fca9862bae66fd3a261a69044c21d0d4d8704317e9d",
+    "ecogrid\\__main__.py": "ce4acf77e3333361b0f23902f8421b230db0f84c2020ef2d8dedf913ae53a87b",
+    "ecogrid\\backtest.py": "c10d3db1cbc463cdb3f9fbd1fb7ef6f28c3cd3d0c9f3f07c5cd99e737e6042ca",
+    "ecogrid\\cli.py": "6cb65925b493577c0cc6ad4193a90626183788510f26632e6e6ca55847a74073",
+    "ecogrid\\config.py": "d48176156a04142b7a6c544b3f8d2ca8a40ec2a4eba19f5ab814a4e5b52aafe2",
+    "ecogrid\\data\\__init__.py": "2a5ec919500457db52b57fc4a35e4a79bfe38de73105e56809ba6323a2ea7a42",
+    "ecogrid\\data\\benchmark.py": "f105d316733bad268dcad3d4d43000cde3de3e9fd13badefa83080e848fc43ef",
+    "ecogrid\\data\\ingestion.py": "4d2e6954c46a13de4922a07e7c5ede17b4cc0e6cea074f3eadedcb750f310352",
+    "ecogrid\\data\\measured.py": "eb43f3f6d4becf068fd04520ddbfc0b5b9ebe177f3055ab36ef9d15125f1057c",
+    "ecogrid\\dispatch.py": "4c1a2c8ec8d9ec42b15769d32733460bb29d73c1d7424f69327465aacfcd4f3e",
+    "ecogrid\\engines\\__init__.py": "281de65fd54b5962ad2b590d24d3b4b839b6196593d4ab61f10277499cee1fe2",
+    "ecogrid\\engines\\base.py": "e6e5bacb6ecd062e09c389e6b3138e10d08bfc19bbfe071105b0a0c40a27a06f",
+    "ecogrid\\engines\\milp_engine.py": "8977b4715ad766db70ab9723137f9a02d900db9e3e5f152421e9a09a860273db",
+    "ecogrid\\engines\\slsqp_engine.py": "194cb49a302e3d8d769f39d98b2bc3da506b18421d878016cf0803737e1ed9a1",
+    "ecogrid\\engines\\stochastic.py": "5cbec942af9f2acb268c8f4c35e690413c03ca4f9c1ed206e868a379d94c0825",
+    "ecogrid\\evaluation.py": "67ff7a23214bd7ba78e4d92f0f821b862efe516571836a33760335c56cd66f93",
+    "ecogrid\\finance.py": "f5c93eef7a8a33c03874bf9e525be2ee935deb1d3c043a68a4811204b704f446",
+    "ecogrid\\forecast.py": "ef1d32c1eb373c866028e96da403023926b6d7ecc2d6107611e251d806b6f424",
+    "ecogrid\\results.py": "5ce305b196de62bc34d486640c5d46ff1560f0c749277cd4e4da0fbc80ccc27c",
+    "ecogrid\\scenarios.py": "50abc29d90f9d56bcb1717f505c62624d5f8cd31d22a4986c287e04251d09b51",
+    "ecogrid\\simulation.py": "fff494f0cd32eccc2c5e31487bb5c4301ea350ae33124496c8ea5e6d59bb0349",
+    "ecogrid\\study.py": "cdf16bf84e3fd27922f22b8093ba7031a965aa9e898fe6dac465264d8312cccc"
+  },
+  "groups": [
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "winter",
+      "experiment": "main",
+      "hours": 168
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "spring",
+      "experiment": "main",
+      "hours": 168
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "summer",
+      "experiment": "main",
+      "hours": 168
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "autumn",
+      "experiment": "main",
+      "hours": 168
+    },
+    {
+      "grid_limit_kw": 2.0,
+      "seed": 42,
+      "window": "winter",
+      "experiment": "grid_capacity",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 3.0,
+      "seed": 42,
+      "window": "winter",
+      "experiment": "grid_capacity",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 7,
+      "window": "winter",
+      "experiment": "seed_repeat",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 99,
+      "window": "winter",
+      "experiment": "seed_repeat",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "winter",
+      "experiment": "stress",
+      "hours": 48
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "winter",
+      "experiment": "pure_cvar_ties",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.0,
+      "seed": 42,
+      "window": "summer",
+      "experiment": "grid_capacity",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 3.0,
+      "seed": 42,
+      "window": "summer",
+      "experiment": "grid_capacity",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 7,
+      "window": "summer",
+      "experiment": "seed_repeat",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 99,
+      "window": "summer",
+      "experiment": "seed_repeat",
+      "hours": 24
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "summer",
+      "experiment": "stress",
+      "hours": 48
+    },
+    {
+      "grid_limit_kw": 2.5,
+      "seed": 42,
+      "window": "summer",
+      "experiment": "pure_cvar_ties",
+      "hours": 24
+    }
+  ]
+}

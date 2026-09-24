@@ -25,3 +25,8 @@ dist/
 
 # 拦截天气数据本地缓存
 data/*.csv
+
+# Re-downloadable immutable source snapshots and generated experiment products
+data/raw/
+data/derived/
+/results/

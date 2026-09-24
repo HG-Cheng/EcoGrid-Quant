@@ -1,0 +1,42 @@
+{
+  "study": "opsd_raw_meter_seasons_2017",
+  "data": {
+    "source_version": "2020-04-15",
+    "column": "DE_KN_residential6_pv",
+    "pv_scale": 0.5,
+    "pv_capacity_kw": 5.0,
+    "cache_dir": "data/raw/opsd"
+  },
+  "train_days": 60,
+  "calibration_days": 30,
+  "evaluation_days": 7,
+  "windows": [
+    {"name": "winter", "start": "2017-01-01T00:00:00Z"},
+    {"name": "spring", "start": "2017-04-01T00:00:00Z"},
+    {"name": "summer", "start": "2017-07-01T00:00:00Z"},
+    {"name": "autumn", "start": "2017-10-01T00:00:00Z"}
+  ],
+  "seed": 42,
+  "n_scenarios": 12,
+  "alpha": 0.9,
+  "risk_weight": 0.5,
+  "representative_windows": ["winter", "summer"],
+  "sensitivity_hours": 24,
+  "additional_seeds": [7, 99],
+  "grid_limits_kw": [2.0, 3.0],
+  "stress_hours": 48,
+  "stress": {"pv_multiplier": 0.2, "positive_forecast_bias_kw": 0.75},
+  "system": {
+    "battery_kwh": 8.0,
+    "battery_kw": 3.0,
+    "grid_kw": 2.5,
+    "initial_soc_kwh": 4.0,
+    "charge_efficiency": 0.95,
+    "discharge_efficiency": 0.95,
+    "throughput_eur_per_kwh": 0.01,
+    "lost_load_eur_per_kwh": 10.0,
+    "terminal_eur_per_kwh": 0.18,
+    "solver_time_limit": 30.0,
+    "feasibility_tolerance": 0.000001
+  }
+}
