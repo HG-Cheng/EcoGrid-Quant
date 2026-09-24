@@ -33,7 +33,7 @@ jobs:
         run: ruff check .
 
       - name: Mypy (static type check)
-        run: mypy ecogrid
+        run: mypy --python-version "${{ matrix.python-version }}" ecogrid
 
       - name: Pytest (unit tests)
         run: pytest tests -q
