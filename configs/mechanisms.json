@@ -1,0 +1,10 @@
+{
+  "analysis": "posthoc_mechanisms",
+  "base_config": "configs/measured.json",
+  "baseline_results": "results/study",
+  "scenario_modes": ["sampled", "all_matching"],
+  "control_windows": ["winter", "summer"],
+  "control_hours": 48,
+  "execution_rules": ["planned", "deficit_discharge"],
+  "interpretation": "Sensitivity chosen after viewing the original 28 days; not independent validation"
+}

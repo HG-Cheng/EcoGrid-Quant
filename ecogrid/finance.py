@@ -8,6 +8,9 @@ Value at Risk for the cost distribution under weather uncertainty.
 
 from __future__ import annotations
 
+from itertools import chain
+from math import fsum
+
 import numpy as np
 
 
@@ -114,6 +117,44 @@ def lcoe(
     return discounted_cost / discounted_energy
 
 
+def _risk_distribution(
+    costs: np.ndarray,
+    alpha: float,
+    probabilities: np.ndarray | None,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Validate a discrete loss distribution and return positive-mass support."""
+    costs = np.asarray(costs, dtype=float)
+    if costs.ndim != 1 or costs.size == 0 or not np.all(np.isfinite(costs)):
+        raise ValueError("costs must be a nonempty 1D array of finite losses")
+    if (
+        not isinstance(alpha, (int, float, np.integer, np.floating))
+        or isinstance(alpha, (bool, np.bool_))
+        or not np.isfinite(alpha)
+        or not 0.0 < alpha < 1.0
+    ):
+        raise ValueError("alpha must lie strictly between 0 and 1")
+
+    probs: np.ndarray
+    if probabilities is None:
+        probs = np.full(costs.size, 1.0 / costs.size)
+    else:
+        probs = np.asarray(probabilities, dtype=float)
+        if probs.shape != costs.shape or not np.all(np.isfinite(probs)):
+            raise ValueError("probabilities must match costs and be finite")
+        if np.any((probs < 0.0) | (probs > 1.0)):
+            raise ValueError("probabilities must lie between 0 and 1")
+    total = fsum(probs)
+    if probabilities is not None and not np.isclose(total, 1.0, rtol=0.0, atol=1e-12):
+        raise ValueError("probabilities must sum to 1")
+    probs = probs / total
+
+    order = np.argsort(costs)
+    sorted_costs = costs[order]
+    sorted_probs = probs[order]
+    positive = sorted_probs > 0.0
+    return sorted_costs[positive], sorted_probs[positive]
+
+
 def value_at_risk(
     costs: np.ndarray,
     alpha: float = 0.95,
@@ -121,8 +162,8 @@ def value_at_risk(
 ) -> float:
     """Value at Risk (VaR) of a cost distribution at confidence ``alpha``.
 
-    For costs (losses), VaR is the ``alpha`` quantile: the threshold that cost
-    does not exceed with probability ``alpha``.
+    For costs (losses), VaR is the lower empirical ``alpha`` quantile:
+    ``inf{x : P(cost <= x) >= alpha}``.
 
     Parameters
     ----------
@@ -138,18 +179,16 @@ def value_at_risk(
     float
         The VaR threshold in the same units as ``costs``.
     """
-    costs = np.asarray(costs, dtype=float)
-    if not 0.0 < alpha < 1.0:
-        raise ValueError("alpha must lie strictly between 0 and 1")
-    order = np.argsort(costs)
-    sorted_costs = costs[order]
-    if probabilities is None:
-        return float(np.quantile(sorted_costs, alpha, method="higher"))
-    probs = np.asarray(probabilities, dtype=float)[order]
-    cdf = np.cumsum(probs)
-    idx = int(np.searchsorted(cdf, alpha))
-    idx = min(idx, sorted_costs.shape[0] - 1)
-    return float(sorted_costs[idx])
+    sorted_costs, sorted_probs = _risk_distribution(costs, alpha, probabilities)
+    left, right = 0, sorted_costs.size - 1
+    while left < right:
+        mid = (left + right) // 2
+        # Subtract inside fsum so a tiny positive mass is not rounded away.
+        if fsum(chain(sorted_probs[: mid + 1], (-alpha,))) >= 0.0:
+            right = mid
+        else:
+            left = mid + 1
+    return float(sorted_costs[left])
 
 
 def cvar(
@@ -160,9 +199,8 @@ def cvar(
     """Conditional Value at Risk (expected shortfall) of a cost distribution.
 
     CVaR at level ``alpha`` is the probability-weighted mean cost of the worst
-    ``(1 - alpha)`` tail of scenarios, i.e. the expected cost *given* that cost
-    exceeds the VaR. It is the coherent tail-risk metric used to answer "in the
-    worst weather outcomes, how bad does the bill get?".
+    ``(1 - alpha)`` tail, including just the needed mass at the VaR threshold.
+    Equal losses and scenarios with zero probability are handled naturally.
 
     Parameters
     ----------
@@ -178,27 +216,9 @@ def cvar(
     float
         The CVaR in the same units as ``costs``. Always ``>= VaR``.
     """
-    costs = np.asarray(costs, dtype=float)
-    if not 0.0 < alpha < 1.0:
-        raise ValueError("alpha must lie strictly between 0 and 1")
-    n = costs.shape[0]
-    probs = (
-        np.full(n, 1.0 / n)
-        if probabilities is None
-        else np.asarray(probabilities, dtype=float)
-    )
-
-    order = np.argsort(costs)
-    sorted_costs = costs[order]
-    sorted_probs = probs[order]
-    cdf = np.cumsum(sorted_probs)
-
-    # Tail mass beyond the alpha quantile.
+    sorted_costs, sorted_probs = _risk_distribution(costs, alpha, probabilities)
+    largest_first_probs = sorted_probs[::-1]
+    prior_tail_mass = np.concatenate(([0.0], np.cumsum(largest_first_probs)[:-1]))
     tail_mass = 1.0 - alpha
-    # Weight of each scenario falling in the worst (1 - alpha) tail.
-    in_tail = np.clip(cdf - alpha, 0.0, None)
-    # Convert cumulative excess into per-scenario tail weights.
-    tail_weights = np.diff(np.concatenate([[0.0], in_tail]))
-    if tail_weights.sum() <= 0:
-        return float(sorted_costs[-1])
-    return float(np.sum(tail_weights * sorted_costs) / tail_mass)
+    tail_weights = np.clip(tail_mass - prior_tail_mass, 0.0, largest_first_probs)
+    return float(np.sum(tail_weights * sorted_costs[::-1]) / tail_mass)

@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "synthetic_days": 100,
+  "train_days": 60,
+  "calibration_days": 30,
+  "evaluation_days": 2,
+  "stress_days": 2,
+  "n_scenarios": 12,
+  "alpha": 0.9,
+  "risk_weights": [0.0, 0.5, 1.0],
+  "system": {
+    "battery_kwh": 8.0,
+    "battery_kw": 3.0,
+    "grid_kw": 2.5,
+    "initial_soc_kwh": 4.0,
+    "charge_efficiency": 0.95,
+    "discharge_efficiency": 0.95,
+    "throughput_eur_per_kwh": 0.01,
+    "lost_load_eur_per_kwh": 10.0,
+    "terminal_eur_per_kwh": 0.18,
+    "solver_time_limit": 30.0,
+    "feasibility_tolerance": 0.000001
+  }
+}

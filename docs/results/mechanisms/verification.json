@@ -1,0 +1,47 @@
+{
+  "scope": "Post-hoc mechanism sensitivity; not new independent validation",
+  "hourly_rows_checked": 6144,
+  "policy_records_checked": 48,
+  "new_runs": 26,
+  "reused_records": 22,
+  "risk_rows_independently_recomputed": 240,
+  "max_risk_difference": 3.552713678800501e-15,
+  "matched_scenario_pairs": 1440,
+  "original_files_byte_identical": 111,
+  "maximum_ledger_residuals": {
+    "balance_kw": 9.783840404509192e-16,
+    "energy_kwh": 1.7763568394002505e-15,
+    "pv_partition_kwh": 8.326672684688674e-16,
+    "grid_cost_eur": 2.220446049250313e-16,
+    "battery_cost_eur": 1.0061396160665481e-16,
+    "shortage_cost_eur": 9.992007221626409e-16,
+    "inventory_eur": 3.0791341698588326e-16,
+    "expense_eur": 2.0036056147532122e-16,
+    "loss_eur": 1.5751289161869408e-15
+  },
+  "candidate_count_observed_min": 29,
+  "candidate_count_observed_max": 29,
+  "invocation_wall_seconds": 1839.2221736999927,
+  "reporting_source_sha256": "e26a5e00c9964ed6dc28b78268e6ea0578604596a9c6879521160664e7141baa",
+  "reporting_note": "Report tables and plotting labels were finalized after the run; original optimization manifest hashes are preserved.",
+  "tests": {
+    "command": "python -B -m pytest tests/test_forecast.py tests/test_dispatch.py tests/test_evaluation.py tests/test_study.py -p no:cacheprovider -o addopts= -q",
+    "exit_code": 0,
+    "passed": 31,
+    "failed": 0,
+    "skipped": 0,
+    "review_snapshot_passed": 31,
+    "review_snapshot_exit_code": 0
+  },
+  "run_command": "python -B -X utf8 -m ecogrid --config configs/mechanisms.json --source measured --output results/mechanisms",
+  "run_exit_code": 0,
+  "report_command": "python -B -X utf8 -c \"from pathlib import Path; from ecogrid.diagnostics import write_mechanism_figures; write_mechanism_figures(Path('results/mechanisms'))\"",
+  "report_exit_code": 0,
+  "static_checks": {
+    "ruff_exit_code": 0,
+    "mypy_exit_code": 0,
+    "mypy_source_files": 23,
+    "git_diff_check_exit_code": 0
+  },
+  "backup_head_unchanged": "5edb71a9ff661b69592a0182be1a6a9c244194c5"
+}

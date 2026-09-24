@@ -1,0 +1,733 @@
+{
+  "created_utc": "2026-09-24T11:06:41.142701+00:00",
+  "run_fingerprint": "65295908b49db649fffe162470daa2b589fb6d504cc615b0466afcbf22a3a53f",
+  "completed_runs": {
+    "main_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "f6d459e7d1f150cd3181795f935da6bfacf2123c6cf0d8aa7082bf2a1553f76a",
+      "completed_utc": "2026-09-24T11:06:56.829518+00:00"
+    },
+    "main_winter_g2p5_s42_deterministic": {
+      "ledger_sha256": "fd1354a99f9b6c36e62cc47ab9fd425aca242cffadc0b7537094d0a096ba5a47",
+      "completed_utc": "2026-09-24T11:07:04.137813+00:00"
+    },
+    "main_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "05de4264ba3d0f91a3f1288929de0646f07f610f834e83593505c4d39e969c6b",
+      "completed_utc": "2026-09-24T11:07:48.189414+00:00",
+      "forecast_sha256": "f86ebd0b25a99a19e29de601e00cbbb4f05e668b41dca3e580273e9b1f791e98"
+    },
+    "main_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "d19d6cdd47671fa73f941e2657b9b15f8936e1c14123f84b01a14f5b65d851ed",
+      "completed_utc": "2026-09-24T11:08:31.884321+00:00"
+    },
+    "main_spring_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "1f4f1a3b8745035219da7895db1ddbfb6cbb8c64e155c5f99580b24beafef759",
+      "completed_utc": "2026-09-24T11:08:32.127044+00:00"
+    },
+    "main_spring_g2p5_s42_deterministic": {
+      "ledger_sha256": "7f9e9ccae3ef7f6ead9c50bfe3b4257ae65b0431bb07316b99a08691cb561726",
+      "completed_utc": "2026-09-24T11:08:39.503662+00:00"
+    },
+    "main_spring_g2p5_s42_stochastic": {
+      "ledger_sha256": "ae32a9e7fa0118e905960a3af902a01e56f8ad8b54ee31eae96a98d85d76912e",
+      "completed_utc": "2026-09-24T11:09:34.280646+00:00",
+      "forecast_sha256": "9727aadc849fff3404e55f9249c49cdeb6694052edaad241fcf0a4e5bd824b12"
+    },
+    "main_spring_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "0ed7613b765a87fb616a27b3f4a94478f77c5760c9b5a49985b5b75b6524db17",
+      "completed_utc": "2026-09-24T11:10:33.732552+00:00"
+    },
+    "main_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "d89a94c81c3eaeef4ded05e23e7c5dfd56c38930dcf993906f16af9f0a3d6f0c",
+      "completed_utc": "2026-09-24T11:10:34.029270+00:00"
+    },
+    "main_summer_g2p5_s42_deterministic": {
+      "ledger_sha256": "85a12e5adc3830e5fe22e8e9c5462a8df5f5ff6a2230636daef95c76839c6e10",
+      "completed_utc": "2026-09-24T11:10:41.799648+00:00"
+    },
+    "main_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "fc887ca1877ab4223ff47cc4de9befdf525370264ded5b4d7edee82112a98a54",
+      "completed_utc": "2026-09-24T11:11:36.062245+00:00",
+      "forecast_sha256": "b1ac14b7aeeff44e5e5b10433e0b90c2a7245aee1ab60aaa466df42a4f852e2a"
+    },
+    "main_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "2ea5eb31762465b5d5929afe4bae67f49ba534c7a1b1ca73855e44656c8d31cc",
+      "completed_utc": "2026-09-24T11:12:35.317095+00:00"
+    },
+    "main_autumn_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "6e2c31cadf939070b77138a98ce122cf3217e74a7012112944ea10b917b53c86",
+      "completed_utc": "2026-09-24T11:12:35.547249+00:00"
+    },
+    "main_autumn_g2p5_s42_deterministic": {
+      "ledger_sha256": "ecaaf23012d8ce9ddaf0d8e41144d6874e0aaf9f67c9b583b6886e4bddb9e21c",
+      "completed_utc": "2026-09-24T11:12:42.790429+00:00"
+    },
+    "main_autumn_g2p5_s42_stochastic": {
+      "ledger_sha256": "67dd323dbd506dd34be66a14a6ea3f89ff5d329ee48834f08c2877b07db41c71",
+      "completed_utc": "2026-09-24T11:13:27.586447+00:00",
+      "forecast_sha256": "ac3e583ad4587b1c5f9f928ab189a4a7e75c86eb2565d30fb17e149c97e598bd"
+    },
+    "main_autumn_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "a3e6750ee71f1f94bbfd2c4a8e0959651c86d79614cd868b39408ab86255b6d8",
+      "completed_utc": "2026-09-24T11:14:15.466473+00:00"
+    },
+    "grid_capacity_winter_g2_s42_perfect_foresight": {
+      "ledger_sha256": "85666bf8528c91fa3dc1274e119f2c8b54f5f8b176e591787c4136e784a41c0d",
+      "completed_utc": "2026-09-24T11:14:15.509143+00:00"
+    },
+    "grid_capacity_winter_g2_s42_deterministic": {
+      "ledger_sha256": "65023446942adee5438a78c8a3c1b1463b69a3898ca4057de2b758db494bf3b4",
+      "completed_utc": "2026-09-24T11:14:16.358787+00:00"
+    },
+    "grid_capacity_winter_g2_s42_stochastic": {
+      "ledger_sha256": "d9f75eda97d7a6da1e9bedfa4ce6426fd82a54b0b9438f137c58b62941feb54d",
+      "completed_utc": "2026-09-24T11:14:21.372922+00:00",
+      "forecast_sha256": "2c05f25e7de44f3add4b9604b3dcd2b7c1a3d8257478f44ed1e3e47d86ec8ef7"
+    },
+    "grid_capacity_winter_g2_s42_cvar_0p5": {
+      "ledger_sha256": "f9c5cbd2c1ee79e61b8c7c2df05c73c26635d89eba1cb9b02650d34c32b3624c",
+      "completed_utc": "2026-09-24T11:14:27.194643+00:00"
+    },
+    "grid_capacity_winter_g3_s42_perfect_foresight": {
+      "ledger_sha256": "bfb601a1d761648c6a4af8f92fa548573ef8130707326d8c7cb21718936470cb",
+      "completed_utc": "2026-09-24T11:14:27.246914+00:00"
+    },
+    "grid_capacity_winter_g3_s42_deterministic": {
+      "ledger_sha256": "03f9646168e445bc617ff7f54f2fcfa71975e4fc3af022da275be9cda519d61a",
+      "completed_utc": "2026-09-24T11:14:28.257743+00:00"
+    },
+    "grid_capacity_winter_g3_s42_stochastic": {
+      "ledger_sha256": "0156a085aea35b66ede1cbbb53f5fcbd3baacb3428910b45b2b23f30fc7278b6",
+      "completed_utc": "2026-09-24T11:14:34.376771+00:00",
+      "forecast_sha256": "2c05f25e7de44f3add4b9604b3dcd2b7c1a3d8257478f44ed1e3e47d86ec8ef7"
+    },
+    "grid_capacity_winter_g3_s42_cvar_0p5": {
+      "ledger_sha256": "fe4c05d86fad193ee1ccba7c426e09ec6e6972c350122f3531b0d7c6c70622c9",
+      "completed_utc": "2026-09-24T11:14:41.997502+00:00"
+    },
+    "seed_repeat_winter_g2p5_s7_perfect_foresight": {
+      "ledger_sha256": "b0b6e330e7dda105e33f77b7c3f97e7438de64809ab8770c27d3eec51cfde2c4",
+      "completed_utc": "2026-09-24T11:14:42.044000+00:00"
+    },
+    "seed_repeat_winter_g2p5_s7_deterministic": {
+      "ledger_sha256": "771688a6b459ba247b04a6a8f719ff61066dbce8dc18985cd90694cf67bad140",
+      "completed_utc": "2026-09-24T11:14:43.094508+00:00"
+    },
+    "seed_repeat_winter_g2p5_s7_stochastic": {
+      "ledger_sha256": "c5f5435412d32aed5d8e475bf5683568d83a052f0cb8b75324e7ca2c12c5f3d1",
+      "completed_utc": "2026-09-24T11:14:49.978125+00:00",
+      "forecast_sha256": "718b243a36af71ddd3f5ae5ee7644af1eddac67ed742b7f995dd2b548df46647"
+    },
+    "seed_repeat_winter_g2p5_s7_cvar_0p5": {
+      "ledger_sha256": "d1a45ec956900f733af9a1d0e0e27cf0abca3b0f1bca4a52cbac0caec6ae2814",
+      "completed_utc": "2026-09-24T11:14:57.781098+00:00"
+    },
+    "seed_repeat_winter_g2p5_s99_perfect_foresight": {
+      "ledger_sha256": "945a41d211c04885f00987e1416290e7842fd125bad916b9b27ea25ff866e4dd",
+      "completed_utc": "2026-09-24T11:14:57.832418+00:00"
+    },
+    "seed_repeat_winter_g2p5_s99_deterministic": {
+      "ledger_sha256": "9cc6a133ed42e4d8c1285427e31ebe8872a70d0be39db94d6cb2757948fa4fa4",
+      "completed_utc": "2026-09-24T11:14:58.934788+00:00"
+    },
+    "seed_repeat_winter_g2p5_s99_stochastic": {
+      "ledger_sha256": "d3707c358528b809fbbdeaccf32568c71487f7d0b09fff14e7ad22d5f9e6ad46",
+      "completed_utc": "2026-09-24T11:15:06.257221+00:00",
+      "forecast_sha256": "2db6f904784f024426c6a24d11a2c092f149ae0b6d6f65db00985d1be5c616a0"
+    },
+    "seed_repeat_winter_g2p5_s99_cvar_0p5": {
+      "ledger_sha256": "fe08418626f27f982dffeadab651ee4fe3ec6966ee525564939feab2fb42e364",
+      "completed_utc": "2026-09-24T11:15:13.663840+00:00"
+    },
+    "stress_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "8e444b8c116a8b0e4dd00fd47ca3931ef92148bb57bbb245aad10f3b9071773c",
+      "completed_utc": "2026-09-24T11:15:13.739974+00:00"
+    },
+    "stress_winter_g2p5_s42_deterministic": {
+      "ledger_sha256": "dbda6e20a6cd7054ebd950ed3495fb78a9c783c55c458422a16ef4b2eb0f177e",
+      "completed_utc": "2026-09-24T11:15:15.907163+00:00"
+    },
+    "stress_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "a2bc1b20c3de6f2019758ab9bcc853cbaa4f05a9e17d6b942d42796e532776e3",
+      "completed_utc": "2026-09-24T11:15:27.587099+00:00",
+      "forecast_sha256": "32e1a41fed1e46df4c5835225beef3dfd5ba4e8e9e3f255d5056fac24d2702f6"
+    },
+    "stress_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "755f97b3145ae632fdfa726540ff051a2373e7e269baac4b10487c7b151727a1",
+      "completed_utc": "2026-09-24T11:15:40.337841+00:00"
+    },
+    "pure_cvar_ties_winter_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "84b29f74c40262ef8f8cd20487c69f8e051a5057e1b9bb0e4841b7f371508a18",
+      "completed_utc": "2026-09-24T11:15:40.386341+00:00"
+    },
+    "pure_cvar_ties_winter_g2p5_s42_stochastic": {
+      "ledger_sha256": "2a9af2b502357f74e446aca599b9c238d41f4ebcfcbce73f5fa5d77fc1ad272a",
+      "completed_utc": "2026-09-24T11:15:47.530567+00:00",
+      "forecast_sha256": "2c05f25e7de44f3add4b9604b3dcd2b7c1a3d8257478f44ed1e3e47d86ec8ef7"
+    },
+    "pure_cvar_ties_winter_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "93f600769008c6b60fbb71aba7bcc69974d3ef49558ab59da4617ac1cfa592ef",
+      "completed_utc": "2026-09-24T11:15:54.759258+00:00"
+    },
+    "pure_cvar_ties_winter_g2p5_s42_cvar_1_raw": {
+      "ledger_sha256": "f6dface1d11d004e451853c94fe80ca1c23299bc997bfdb5949a757635fc4b48",
+      "completed_utc": "2026-09-24T11:16:04.164430+00:00"
+    },
+    "pure_cvar_ties_winter_g2p5_s42_cvar_1": {
+      "ledger_sha256": "e1462d574b6f72ab4678a4049b17ea932f4327d770859a93d11e53fd24de5593",
+      "completed_utc": "2026-09-24T11:16:17.934977+00:00"
+    },
+    "grid_capacity_summer_g2_s42_perfect_foresight": {
+      "ledger_sha256": "6c74e42b6b2179daeac47355480cabf0cf8b35bf28693f4f9acf0be050989935",
+      "completed_utc": "2026-09-24T11:16:17.982454+00:00"
+    },
+    "grid_capacity_summer_g2_s42_deterministic": {
+      "ledger_sha256": "2304627114abf7b0e62d97f6076789718a5484bc979feffb6c77623d41a69dcc",
+      "completed_utc": "2026-09-24T11:16:18.819730+00:00"
+    },
+    "grid_capacity_summer_g2_s42_stochastic": {
+      "ledger_sha256": "57fb33f9ea3f3a9ff2a6336c9c76d52e09ed146ace0c3fc6b2b5e942a3795953",
+      "completed_utc": "2026-09-24T11:16:24.659888+00:00",
+      "forecast_sha256": "d5e51e32712f4ba1b96d2d4b943277599ee846ae4a6fdef3d0b78b26b42c4a5f"
+    },
+    "grid_capacity_summer_g2_s42_cvar_0p5": {
+      "ledger_sha256": "568b685b3feb07b9ad45eb3f26b11d22954944578926a6b4cc0493eff4fd6b2f",
+      "completed_utc": "2026-09-24T11:16:31.928541+00:00"
+    },
+    "grid_capacity_summer_g3_s42_perfect_foresight": {
+      "ledger_sha256": "e41fcab89fbb2583fc7e632a464181f805b3795825b48bd51f696d8dcd1b178b",
+      "completed_utc": "2026-09-24T11:16:31.973468+00:00"
+    },
+    "grid_capacity_summer_g3_s42_deterministic": {
+      "ledger_sha256": "f2eaf6bdfc66f526ce39ebfabb3b0e8c4189250bd79fc56a018a37821175440b",
+      "completed_utc": "2026-09-24T11:16:33.111298+00:00"
+    },
+    "grid_capacity_summer_g3_s42_stochastic": {
+      "ledger_sha256": "c3231acedaa9f8e3f64b6495983d82b831ba15200bcffbceca9e5195c4e73537",
+      "completed_utc": "2026-09-24T11:16:41.453299+00:00",
+      "forecast_sha256": "d5e51e32712f4ba1b96d2d4b943277599ee846ae4a6fdef3d0b78b26b42c4a5f"
+    },
+    "grid_capacity_summer_g3_s42_cvar_0p5": {
+      "ledger_sha256": "42a1cf668da42d10e5c9cb2bdd2f552756e30bcad554d1cc27a3176ec1e2a882",
+      "completed_utc": "2026-09-24T11:16:51.098627+00:00"
+    },
+    "seed_repeat_summer_g2p5_s7_perfect_foresight": {
+      "ledger_sha256": "cdd89eb4151f9dc3f676f918b026c73a66b5cce8d6045d61bc9f60809a78db69",
+      "completed_utc": "2026-09-24T11:16:51.147607+00:00"
+    },
+    "seed_repeat_summer_g2p5_s7_deterministic": {
+      "ledger_sha256": "cf17942083052306b03596f50e4288a903f79be64af59d925b3fc60b8a622841",
+      "completed_utc": "2026-09-24T11:16:52.231740+00:00"
+    },
+    "seed_repeat_summer_g2p5_s7_stochastic": {
+      "ledger_sha256": "38b2b81b18ab3a5fdb632074d9709ed4fb50dee63fd2c6e74e86a0bca752492e",
+      "completed_utc": "2026-09-24T11:16:58.836039+00:00",
+      "forecast_sha256": "af81480ff5a617f54233da498a1b713bdfa14118a8b60fc73a112fd4ec4419a7"
+    },
+    "seed_repeat_summer_g2p5_s7_cvar_0p5": {
+      "ledger_sha256": "93b66b086a02fa589bbb8c001c08d4b5ee7156a9cf76a298b26c0dbd86765f97",
+      "completed_utc": "2026-09-24T11:17:05.773115+00:00"
+    },
+    "seed_repeat_summer_g2p5_s99_perfect_foresight": {
+      "ledger_sha256": "7f64f54d8890d2a15e0f9e09486a51a36c4b066b6d0d2fdf2759d859e8b7c2fb",
+      "completed_utc": "2026-09-24T11:17:05.824640+00:00"
+    },
+    "seed_repeat_summer_g2p5_s99_deterministic": {
+      "ledger_sha256": "0af3beec9bf4c04c35ad68b8237cbca71d8618ec4fe17f43421a4805d62f4eb8",
+      "completed_utc": "2026-09-24T11:17:06.890640+00:00"
+    },
+    "seed_repeat_summer_g2p5_s99_stochastic": {
+      "ledger_sha256": "2c2dc6fbdd46f85c91f8b23e514491b79773b587b391baa3fd06c8920ae76294",
+      "completed_utc": "2026-09-24T11:17:13.790326+00:00",
+      "forecast_sha256": "7437066a75208726ce20bc551ef4db59e4411d1c24b5d60f5637a26fe433f231"
+    },
+    "seed_repeat_summer_g2p5_s99_cvar_0p5": {
+      "ledger_sha256": "28c64d942ebe8ccf5c1d0f2310a5559f8da7b1a8d10776f2e94deb86b00abb02",
+      "completed_utc": "2026-09-24T11:17:20.283304+00:00"
+    },
+    "stress_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "4864773786a97f0df8a305aa8f026fbf7ce775b9b433668b1a903f920e57bb54",
+      "completed_utc": "2026-09-24T11:17:20.341091+00:00"
+    },
+    "stress_summer_g2p5_s42_deterministic": {
+      "ledger_sha256": "c25f9d4c3e97824b3b3e906c1ea34a019155c33821776bc2dbb99cd45d1c1d48",
+      "completed_utc": "2026-09-24T11:17:22.351176+00:00"
+    },
+    "stress_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "7333c4b85711b9c94daf40099852e0fe8323ebecffc038032f56a8ecf71a8690",
+      "completed_utc": "2026-09-24T11:17:36.379213+00:00",
+      "forecast_sha256": "7fe3adb5d7a380686503c87aadd996ad8f8254611a64549cafd8aad6c2725449"
+    },
+    "stress_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "ea5ad630bb2ce74584c70c0dfd0dac97071e3e8aae87c1ddbc982f1781fcbb5e",
+      "completed_utc": "2026-09-24T11:17:52.946023+00:00"
+    },
+    "pure_cvar_ties_summer_g2p5_s42_perfect_foresight": {
+      "ledger_sha256": "55674576ca31d2cbf0ded9a227446e4aa92e966da4bf040830ab636a0f4941f7",
+      "completed_utc": "2026-09-24T11:17:53.006409+00:00"
+    },
+    "pure_cvar_ties_summer_g2p5_s42_stochastic": {
+      "ledger_sha256": "09c790591b2c2524c3fa1faf9f56ce2ad992d1e157f14450ce0080cf058d66a3",
+      "completed_utc": "2026-09-24T11:17:59.616718+00:00",
+      "forecast_sha256": "d5e51e32712f4ba1b96d2d4b943277599ee846ae4a6fdef3d0b78b26b42c4a5f"
+    },
+    "pure_cvar_ties_summer_g2p5_s42_cvar_0p5": {
+      "ledger_sha256": "e290ad41398af0e5d95acd52f7bd54d355e6f0e86338ee7111e8acb5d6fab300",
+      "completed_utc": "2026-09-24T11:18:05.576996+00:00"
+    },
+    "pure_cvar_ties_summer_g2p5_s42_cvar_1_raw": {
+      "ledger_sha256": "1d27b93c08eca253923f15abe522315586fdbd20428d954ae8001a96fb42491a",
+      "completed_utc": "2026-09-24T11:18:12.079017+00:00"
+    },
+    "pure_cvar_ties_summer_g2p5_s42_cvar_1": {
+      "ledger_sha256": "b03ade7468d7868623fb8f03978d76dbe3f2e4a3f586bd4aee8b57305cee9398",
+      "completed_utc": "2026-09-24T11:18:22.477692+00:00"
+    }
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyomo": "6.10.0",
+    "highspy": "1.14.0",
+    "scipy": "1.15.3"
+  },
+  "protocol": {
+    "settings": {
+      "study": "opsd_raw_meter_seasons_2017",
+      "data": {
+        "source_version": "2020-04-15",
+        "column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "cache_dir": "data/raw/opsd"
+      },
+      "train_days": 60,
+      "calibration_days": 30,
+      "evaluation_days": 7,
+      "windows": [
+        {
+          "name": "winter",
+          "start": "2017-01-01T00:00:00Z"
+        },
+        {
+          "name": "spring",
+          "start": "2017-04-01T00:00:00Z"
+        },
+        {
+          "name": "summer",
+          "start": "2017-07-01T00:00:00Z"
+        },
+        {
+          "name": "autumn",
+          "start": "2017-10-01T00:00:00Z"
+        }
+      ],
+      "seed": 42,
+      "n_scenarios": 12,
+      "alpha": 0.9,
+      "risk_weight": 0.5,
+      "representative_windows": [
+        "winter",
+        "summer"
+      ],
+      "sensitivity_hours": 24,
+      "additional_seeds": [
+        7,
+        99
+      ],
+      "grid_limits_kw": [
+        2.0,
+        3.0
+      ],
+      "stress_hours": 48,
+      "stress": {
+        "pv_multiplier": 0.2,
+        "positive_forecast_bias_kw": 0.75
+      },
+      "system": {
+        "battery_kwh": 8.0,
+        "battery_kw": 3.0,
+        "grid_kw": 2.5,
+        "initial_soc_kwh": 4.0,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "throughput_eur_per_kwh": 0.01,
+        "lost_load_eur_per_kwh": 10.0,
+        "terminal_eur_per_kwh": 0.18,
+        "solver_time_limit": 30.0,
+        "feasibility_tolerance": 1e-06
+      }
+    },
+    "windows": [
+      {
+        "name": "winter",
+        "train_start": "2016-10-03T00:00:00+00:00",
+        "calibration_start": "2016-12-02T00:00:00+00:00",
+        "test_start": "2017-01-01T00:00:00+00:00",
+        "test_end": "2017-01-08T00:00:00+00:00",
+        "frame_end": "2017-01-09T00:00:00+00:00",
+        "differentiation_predecessor": "2016-10-03T00:00:00+00:00",
+        "training_hours": 1440,
+        "calibration_hours": 720,
+        "evaluation_hours": 168,
+        "lookahead_hours": 24,
+        "total_hours": 2352,
+        "relevant_interpolation_count": 0,
+        "invalid_interval_count": 0,
+        "selection_basis": "calendar_and_source_quality_before_strategy_results",
+        "pv_source_column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "maximum_endpoint_age_seconds": 103.0,
+        "minimum_actual_interval_seconds": 3535.0,
+        "maximum_actual_interval_seconds": 3661.0,
+        "publisher_preprocessing_applied": false,
+        "interpolation_applied": false
+      },
+      {
+        "name": "spring",
+        "train_start": "2017-01-01T00:00:00+00:00",
+        "calibration_start": "2017-03-02T00:00:00+00:00",
+        "test_start": "2017-04-01T00:00:00+00:00",
+        "test_end": "2017-04-08T00:00:00+00:00",
+        "frame_end": "2017-04-09T00:00:00+00:00",
+        "differentiation_predecessor": "2017-01-01T00:00:00+00:00",
+        "training_hours": 1440,
+        "calibration_hours": 720,
+        "evaluation_hours": 168,
+        "lookahead_hours": 24,
+        "total_hours": 2352,
+        "relevant_interpolation_count": 0,
+        "invalid_interval_count": 0,
+        "selection_basis": "calendar_and_source_quality_before_strategy_results",
+        "pv_source_column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "maximum_endpoint_age_seconds": 78.0,
+        "minimum_actual_interval_seconds": 3535.0,
+        "maximum_actual_interval_seconds": 3661.0,
+        "publisher_preprocessing_applied": false,
+        "interpolation_applied": false
+      },
+      {
+        "name": "summer",
+        "train_start": "2017-04-02T00:00:00+00:00",
+        "calibration_start": "2017-06-01T00:00:00+00:00",
+        "test_start": "2017-07-01T00:00:00+00:00",
+        "test_end": "2017-07-08T00:00:00+00:00",
+        "frame_end": "2017-07-09T00:00:00+00:00",
+        "differentiation_predecessor": "2017-04-02T00:00:00+00:00",
+        "training_hours": 1440,
+        "calibration_hours": 720,
+        "evaluation_hours": 168,
+        "lookahead_hours": 24,
+        "total_hours": 2352,
+        "relevant_interpolation_count": 0,
+        "invalid_interval_count": 0,
+        "selection_basis": "calendar_and_source_quality_before_strategy_results",
+        "pv_source_column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "maximum_endpoint_age_seconds": 160.0,
+        "minimum_actual_interval_seconds": 3490.0,
+        "maximum_actual_interval_seconds": 3665.0,
+        "publisher_preprocessing_applied": false,
+        "interpolation_applied": false
+      },
+      {
+        "name": "autumn",
+        "train_start": "2017-07-03T00:00:00+00:00",
+        "calibration_start": "2017-09-01T00:00:00+00:00",
+        "test_start": "2017-10-01T00:00:00+00:00",
+        "test_end": "2017-10-08T00:00:00+00:00",
+        "frame_end": "2017-10-09T00:00:00+00:00",
+        "differentiation_predecessor": "2017-07-03T00:00:00+00:00",
+        "training_hours": 1440,
+        "calibration_hours": 720,
+        "evaluation_hours": 168,
+        "lookahead_hours": 24,
+        "total_hours": 2352,
+        "relevant_interpolation_count": 0,
+        "invalid_interval_count": 0,
+        "selection_basis": "calendar_and_source_quality_before_strategy_results",
+        "pv_source_column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "maximum_endpoint_age_seconds": 104.0,
+        "minimum_actual_interval_seconds": 3534.0,
+        "maximum_actual_interval_seconds": 3663.0,
+        "publisher_preprocessing_applied": false,
+        "interpolation_applied": false
+      }
+    ],
+    "source": {
+      "original_meter_readings": true,
+      "source": "opsd_original_cossmic_meter",
+      "source_url": "https://data.open-power-system-data.org/household_data/2020-04-15/original_data/original_data.zip",
+      "source_version": "2020-04-15",
+      "source_member": "original_data/DE_KN_residential_006/phptimeseries/feed_43.MYD",
+      "source_unit": "cumulative kWh",
+      "source_encoding": "9-byte <xIf records: padding, uint32 Unix UTC seconds, float32 cumulative kWh",
+      "raw_cache_path": "D:\\Avery_Data\\Desktop\\Python_Workspace\\EcoGrid-Quant\\data\\raw\\opsd\\residential6_pv_feed_43_current.MYD",
+      "raw_sha256": {
+        "residential6_pv_feed_43_current.MYD": "e4607b7971c98026cabaea253f181e3b9b90efbcbe91cb784c41653d0b87e73c"
+      },
+      "raw_member_crc32": 3286998230,
+      "source_decoder_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/read.py#L144-L171",
+      "source_feed_mapping_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/conf/households.yml",
+      "license": "CC-BY-4.0",
+      "attribution": "Open Power System Data. 2020. Data Package Household Data. Version 2020-04-15."
+    },
+    "derived_data": {
+      "original_meter_readings": true,
+      "source": "opsd_original_cossmic_meter",
+      "source_url": "https://data.open-power-system-data.org/household_data/2020-04-15/original_data/original_data.zip",
+      "source_version": "2020-04-15",
+      "source_member": "original_data/DE_KN_residential_006/phptimeseries/feed_43.MYD",
+      "source_unit": "cumulative kWh",
+      "source_encoding": "9-byte <xIf records: padding, uint32 Unix UTC seconds, float32 cumulative kWh",
+      "raw_cache_path": "D:\\Avery_Data\\Desktop\\Python_Workspace\\EcoGrid-Quant\\data\\raw\\opsd\\residential6_pv_feed_43_current.MYD",
+      "raw_sha256": {
+        "residential6_pv_feed_43_current.MYD": "e4607b7971c98026cabaea253f181e3b9b90efbcbe91cb784c41653d0b87e73c"
+      },
+      "raw_member_crc32": 3286998230,
+      "source_decoder_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/read.py#L144-L171",
+      "source_feed_mapping_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/conf/households.yml",
+      "license": "CC-BY-4.0",
+      "attribution": "Open Power System Data. 2020. Data Package Household Data. Version 2020-04-15.",
+      "pv_source_column": "DE_KN_residential6_pv",
+      "pv_observation_type": "measured_original_cumulative_meter",
+      "load_price_type": "deterministic_benchmark_assumptions",
+      "pv_scale": 0.5,
+      "pv_capacity_kw": 5.0,
+      "capacity_basis": "declared_simulation_bound_not_verified_site_nameplate",
+      "scaling_basis": "fixed_declared_scale_not_normalized_by_test_data",
+      "pv_conversion": "(last_actual_kwh_at_or_before_t+1h - last_actual_kwh_at_or_before_t) / 1h * pv_scale",
+      "index_semantics": "nominal UTC hour-start bins [t,t+1h)",
+      "meter_interval_semantics": "actual cumulative endpoints <= nominal boundaries, each <=180s old",
+      "observation_delay_hours": 2,
+      "observation_availability_basis": "simulated conservative release, not historical telemetry",
+      "as_issued_measurements": false,
+      "publisher_preprocessing_is_causal": null,
+      "quality_policy": "reject missing/stale endpoints and nonphysical interval deltas; no filling",
+      "quality_caveat": "Original meter energy assigned to hourly bins with <=180s endpoint lag; actual timestamps and elapsed seconds retained. No interpolation or publisher validation is applied. Two-hour release is a simulation assumption because historical transmission arrival times are not available.",
+      "regularization_source_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/imputation.py#L32-L66",
+      "retrospective_filter_source_url": "https://github.com/isc-konstanz/household_data/blob/2020-04-15/household/validation.py#L58-L110",
+      "maximum_endpoint_age_seconds": 180,
+      "publisher_preprocessing_applied": false,
+      "interpolation_applied": false,
+      "whole_series_statistics_applied": false,
+      "selection": {
+        "name": "winter",
+        "train_start": "2016-10-03T00:00:00+00:00",
+        "calibration_start": "2016-12-02T00:00:00+00:00",
+        "test_start": "2017-01-01T00:00:00+00:00",
+        "test_end": "2017-01-08T00:00:00+00:00",
+        "frame_end": "2017-01-09T00:00:00+00:00",
+        "differentiation_predecessor": "2016-10-03T00:00:00+00:00",
+        "training_hours": 1440,
+        "calibration_hours": 720,
+        "evaluation_hours": 168,
+        "lookahead_hours": 24,
+        "total_hours": 2352,
+        "relevant_interpolation_count": 0,
+        "invalid_interval_count": 0,
+        "selection_basis": "calendar_and_source_quality_before_strategy_results",
+        "pv_source_column": "DE_KN_residential6_pv",
+        "pv_scale": 0.5,
+        "pv_capacity_kw": 5.0,
+        "maximum_endpoint_age_seconds": 103.0,
+        "minimum_actual_interval_seconds": 3535.0,
+        "maximum_actual_interval_seconds": 3661.0,
+        "publisher_preprocessing_applied": false,
+        "interpolation_applied": false
+      }
+    },
+    "run_code_sha256": {
+      "ecogrid\\__init__.py": "6fe3841a0ddd03abb94b2fca9862bae66fd3a261a69044c21d0d4d8704317e9d",
+      "ecogrid\\__main__.py": "ce4acf77e3333361b0f23902f8421b230db0f84c2020ef2d8dedf913ae53a87b",
+      "ecogrid\\backtest.py": "c10d3db1cbc463cdb3f9fbd1fb7ef6f28c3cd3d0c9f3f07c5cd99e737e6042ca",
+      "ecogrid\\cli.py": "6cb65925b493577c0cc6ad4193a90626183788510f26632e6e6ca55847a74073",
+      "ecogrid\\config.py": "d48176156a04142b7a6c544b3f8d2ca8a40ec2a4eba19f5ab814a4e5b52aafe2",
+      "ecogrid\\data\\__init__.py": "2a5ec919500457db52b57fc4a35e4a79bfe38de73105e56809ba6323a2ea7a42",
+      "ecogrid\\data\\benchmark.py": "f105d316733bad268dcad3d4d43000cde3de3e9fd13badefa83080e848fc43ef",
+      "ecogrid\\data\\ingestion.py": "4d2e6954c46a13de4922a07e7c5ede17b4cc0e6cea074f3eadedcb750f310352",
+      "ecogrid\\data\\measured.py": "eb43f3f6d4becf068fd04520ddbfc0b5b9ebe177f3055ab36ef9d15125f1057c",
+      "ecogrid\\dispatch.py": "4c1a2c8ec8d9ec42b15769d32733460bb29d73c1d7424f69327465aacfcd4f3e",
+      "ecogrid\\engines\\__init__.py": "281de65fd54b5962ad2b590d24d3b4b839b6196593d4ab61f10277499cee1fe2",
+      "ecogrid\\engines\\base.py": "e6e5bacb6ecd062e09c389e6b3138e10d08bfc19bbfe071105b0a0c40a27a06f",
+      "ecogrid\\engines\\milp_engine.py": "8977b4715ad766db70ab9723137f9a02d900db9e3e5f152421e9a09a860273db",
+      "ecogrid\\engines\\slsqp_engine.py": "194cb49a302e3d8d769f39d98b2bc3da506b18421d878016cf0803737e1ed9a1",
+      "ecogrid\\engines\\stochastic.py": "5cbec942af9f2acb268c8f4c35e690413c03ca4f9c1ed206e868a379d94c0825",
+      "ecogrid\\evaluation.py": "67ff7a23214bd7ba78e4d92f0f821b862efe516571836a33760335c56cd66f93",
+      "ecogrid\\finance.py": "f5c93eef7a8a33c03874bf9e525be2ee935deb1d3c043a68a4811204b704f446",
+      "ecogrid\\forecast.py": "ef1d32c1eb373c866028e96da403023926b6d7ecc2d6107611e251d806b6f424",
+      "ecogrid\\results.py": "5ce305b196de62bc34d486640c5d46ff1560f0c749277cd4e4da0fbc80ccc27c",
+      "ecogrid\\scenarios.py": "50abc29d90f9d56bcb1717f505c62624d5f8cd31d22a4986c287e04251d09b51",
+      "ecogrid\\simulation.py": "fff494f0cd32eccc2c5e31487bb5c4301ea350ae33124496c8ea5e6d59bb0349",
+      "ecogrid\\study.py": "cdf16bf84e3fd27922f22b8093ba7031a965aa9e898fe6dac465264d8312cccc"
+    },
+    "groups": [
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "winter",
+        "experiment": "main",
+        "hours": 168
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "spring",
+        "experiment": "main",
+        "hours": 168
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "summer",
+        "experiment": "main",
+        "hours": 168
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "autumn",
+        "experiment": "main",
+        "hours": 168
+      },
+      {
+        "grid_limit_kw": 2.0,
+        "seed": 42,
+        "window": "winter",
+        "experiment": "grid_capacity",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 3.0,
+        "seed": 42,
+        "window": "winter",
+        "experiment": "grid_capacity",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 7,
+        "window": "winter",
+        "experiment": "seed_repeat",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 99,
+        "window": "winter",
+        "experiment": "seed_repeat",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "winter",
+        "experiment": "stress",
+        "hours": 48
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "winter",
+        "experiment": "pure_cvar_ties",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.0,
+        "seed": 42,
+        "window": "summer",
+        "experiment": "grid_capacity",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 3.0,
+        "seed": 42,
+        "window": "summer",
+        "experiment": "grid_capacity",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 7,
+        "window": "summer",
+        "experiment": "seed_repeat",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 99,
+        "window": "summer",
+        "experiment": "seed_repeat",
+        "hours": 24
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "summer",
+        "experiment": "stress",
+        "hours": 48
+      },
+      {
+        "grid_limit_kw": 2.5,
+        "seed": 42,
+        "window": "summer",
+        "experiment": "pure_cvar_ties",
+        "hours": 24
+      }
+    ]
+  },
+  "system": {
+    "battery_kwh": 8.0,
+    "battery_kw": 3.0,
+    "grid_kw": 2.5,
+    "initial_soc_kwh": 4.0,
+    "charge_efficiency": 0.95,
+    "discharge_efficiency": 0.95,
+    "throughput_eur_per_kwh": 0.01,
+    "lost_load_eur_per_kwh": 10.0,
+    "terminal_eur_per_kwh": 0.18,
+    "solver_time_limit": 30.0,
+    "feasibility_tolerance": 1e-06
+  },
+  "risk_population": "observed hours and distinct complete UTC days; no IID claim",
+  "tail_tiebreak": "lambda=1 only: minimize E subject to primary CVaR + EUR1e-7",
+  "solver": {
+    "name": "appsi_highs",
+    "mip_rel_gap": 1e-08,
+    "random_seed": 0,
+    "threads": "default",
+    "acceptance": "optimal + residual check"
+  },
+  "status": "complete",
+  "code_sha256": {
+    "ecogrid\\__init__.py": "6fe3841a0ddd03abb94b2fca9862bae66fd3a261a69044c21d0d4d8704317e9d",
+    "ecogrid\\__main__.py": "ce4acf77e3333361b0f23902f8421b230db0f84c2020ef2d8dedf913ae53a87b",
+    "ecogrid\\backtest.py": "c10d3db1cbc463cdb3f9fbd1fb7ef6f28c3cd3d0c9f3f07c5cd99e737e6042ca",
+    "ecogrid\\cli.py": "6cb65925b493577c0cc6ad4193a90626183788510f26632e6e6ca55847a74073",
+    "ecogrid\\config.py": "d48176156a04142b7a6c544b3f8d2ca8a40ec2a4eba19f5ab814a4e5b52aafe2",
+    "ecogrid\\data\\__init__.py": "2a5ec919500457db52b57fc4a35e4a79bfe38de73105e56809ba6323a2ea7a42",
+    "ecogrid\\data\\benchmark.py": "f105d316733bad268dcad3d4d43000cde3de3e9fd13badefa83080e848fc43ef",
+    "ecogrid\\data\\ingestion.py": "4d2e6954c46a13de4922a07e7c5ede17b4cc0e6cea074f3eadedcb750f310352",
+    "ecogrid\\data\\measured.py": "eb43f3f6d4becf068fd04520ddbfc0b5b9ebe177f3055ab36ef9d15125f1057c",
+    "ecogrid\\diagnostics.py": "9d719fa48175a48e58ef8fe4ddcba92a1bb72f3488a622b35dcbdbfa1c417c3b",
+    "ecogrid\\dispatch.py": "4c1a2c8ec8d9ec42b15769d32733460bb29d73c1d7424f69327465aacfcd4f3e",
+    "ecogrid\\engines\\__init__.py": "281de65fd54b5962ad2b590d24d3b4b839b6196593d4ab61f10277499cee1fe2",
+    "ecogrid\\engines\\base.py": "e6e5bacb6ecd062e09c389e6b3138e10d08bfc19bbfe071105b0a0c40a27a06f",
+    "ecogrid\\engines\\milp_engine.py": "8977b4715ad766db70ab9723137f9a02d900db9e3e5f152421e9a09a860273db",
+    "ecogrid\\engines\\slsqp_engine.py": "194cb49a302e3d8d769f39d98b2bc3da506b18421d878016cf0803737e1ed9a1",
+    "ecogrid\\engines\\stochastic.py": "5cbec942af9f2acb268c8f4c35e690413c03ca4f9c1ed206e868a379d94c0825",
+    "ecogrid\\evaluation.py": "67ff7a23214bd7ba78e4d92f0f821b862efe516571836a33760335c56cd66f93",
+    "ecogrid\\finance.py": "f5c93eef7a8a33c03874bf9e525be2ee935deb1d3c043a68a4811204b704f446",
+    "ecogrid\\forecast.py": "ef1d32c1eb373c866028e96da403023926b6d7ecc2d6107611e251d806b6f424",
+    "ecogrid\\results.py": "5ce305b196de62bc34d486640c5d46ff1560f0c749277cd4e4da0fbc80ccc27c",
+    "ecogrid\\scenarios.py": "50abc29d90f9d56bcb1717f505c62624d5f8cd31d22a4986c287e04251d09b51",
+    "ecogrid\\simulation.py": "fff494f0cd32eccc2c5e31487bb5c4301ea350ae33124496c8ea5e6d59bb0349",
+    "ecogrid\\study.py": "cdf16bf84e3fd27922f22b8093ba7031a965aa9e898fe6dac465264d8312cccc"
+  },
+  "completed_utc": "2026-09-24T11:18:25.256539+00:00"
+}
